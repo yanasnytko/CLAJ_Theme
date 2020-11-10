@@ -1,0 +1,93 @@
+/*
+Theme Name: CLAJ Theme
+Author: Sirius
+Author URI: https://siriushub.be/
+Description: A basic theme using the Bootstrap framework for CLAJ.
+Version: 1.0
+Tags: flexible-width, custom-header, custom-menu, bootstrap
+Text Domain: clajtheme
+*/
+
+/* VARIABLES */
+
+:root {
+  --logo: #4B9228;
+  --texte: #152528;
+  --highlight: #C4147C;
+  --blanc: #FFFFFF;
+  --gris: #E0E0E0;
+}
+
+/* Globals */
+
+.custom-logo {
+  width: 50px;
+  height: auto;
+  padding-top: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  background-color: var(--blanc);
+  color: var(--texte);
+}
+
+h1, h2, h3 {
+  color: var(--logo);
+  font-family: "Rubik", sans-serif;
+}
+
+nav {
+  list-style-type: none;
+  margin-bottom: 60px;
+  height: 100px;
+  background-color: var(--blanc);
+}
+
+
+/* LIENS */
+a {
+  color: var(--texte);
+}
+a:hover {
+  color: var(--highlight);
+  text-decoration: none;
+}
+.menu-item {
+  margin: 20px;
+}
+.pager {
+  list-style-type: none;
+}
+.pager li {
+  float: left;
+  margin-right: 20px;
+}
+
+/* SWIPER - le slider lateral pour les antennes */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  min-width: 400px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
