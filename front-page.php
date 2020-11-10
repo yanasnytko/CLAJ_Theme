@@ -1,4 +1,5 @@
 <!-- La page d'accueil -->
+<!-- La page d'accueil -->
 
 <?php get_header(); ?>
 
