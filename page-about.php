@@ -10,100 +10,157 @@
 
   <!-- Desription -->
   <div>
-    <?php
-    $description = get_field('description');
-    $desription_image = $description['description_image'];
-    ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
 
-    <p>
-      <?= $description['description_texte'] ?>
-    </p>
-    <img src="<?= $desription_image['url'] ?>" alt="<?= $desription_image['caption'] ?>">
+        <?php
+        $description = get_field('description');
+        $desription_image = $description['description_image'];
+        ?>
+        
+      
+        <p>
+          <?= $description['description_texte'] ?>
+        </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <img src="<?= $desription_image['url'] ?>" alt="<?= $desription_image['caption'] ?>"class="rounded img-fluid">
+        </div>
+
+      </div>
+  </div>
   </div>
 
   <!-- Notre Mission -->
   <div>
-    <?php
-    $mission = get_field('mission');
-    ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <?php
+        $mission = get_field('mission');
+        ?>
 
-    <h2>
-      <?= $mission['mission_titre'] ?>
-    </h2>
-    <p>
-      <?= $mission['mission_texte'] ?>
-    </p>
-    <p class="valeur">
-      <?= $mission['mission_valeur_1'] ?>
-    </p>
-    <p class="valeur">
-      <?= $mission['mission_valeur_2'] ?>
-    </p>
+        <h2>
+          <?= $mission['mission_titre'] ?>
+        </h2>
+        <p>
+          <?= $mission['mission_texte'] ?>
+        </p>
+        <p class="valeur">
+          <?= $mission['mission_valeur_1'] ?>
+        </p>
+        <p class="valeur">
+          <?= $mission['mission_valeur_2'] ?>
+        </p>
+
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 ">
+      </div>
+
+    </div>
+  </div>
   </div>
 
   <!-- Nos publics cibles -->
   <div>
-    <?php
-    $publics = get_field('publics');
-    $publics_image = $publics['publics_image'];
-    ?>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 ">
 
-    <img src="<?= $publics_image['url'] ?>" alt="<?= $publics_image['caption'] ?>">
-    <h2>
-      <?= $publics['publics_titre'] ?>
-    </h2>
-    <p>
-      <?= $publics['publics_texte'] ?>
-    </p>
+          <?php
+          $publics = get_field('publics');
+          $publics_image = $publics['publics_image'];
+          ?>
 
-    <?php if ($publics['publics_link']) : ?>
-    <a href="<?= $publics['publics_link']['url'] ?>">
-      <?= $publics['publics_link_text'] ?>
-    </a>
-    <?php endif; ?>
+          <img src="<?= $publics_image['url'] ?>" alt="<?= $publics_image['caption'] ?>"class="rounded img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 ">
+
+
+          <h2>
+            <?= $publics['publics_titre'] ?>
+          </h2>
+          <p>
+            <?= $publics['publics_texte'] ?>
+          </p>
+
+          <?php if ($publics['publics_link']) : ?>
+          <a href="<?= $publics['publics_link']['url'] ?>">
+            <?= $publics['publics_link_text'] ?>
+          </a>
+          <?php endif; ?>
+        </div>
+
+
+    </div>
+  </div>
   </div>
 
   <!-- Une antenne à proximité -->
+
   <div>
-    <?php get_template_part('parts/antennes'); ?>
+  
+
+        <?php get_template_part('parts/antennes'); ?>
+      </div>
+    </div>
+  </div>
   </div>
 
   <!-- Confidentialité et gratuité -->
   <div>
-    <?php
-    $confident = get_field('confident');
-    ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 ">
 
-    <h2>
-      <?= $confident['confident_titre'] ?>
-    </h2>
-    <p>
-      <?= $confident['confident_texte'] ?>
-    </p>
+        <?php
+        $confident = get_field('confident');
+        ?>
+
+        <h2>
+          <?= $confident['confident_titre'] ?>
+        </h2>
+        <p>
+          <?= $confident['confident_texte'] ?>
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 ">
+      </div>
+    </div>
+  </div>
   </div>
 
   <!-- Nos partenaires -->
   <div>
-    <?php
-    $partenaires = get_field('partenaires');
-    $partenaires_image = $partenaires['partenaires_image'];
-    ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 ">
+        <?php
+        $partenaires = get_field('partenaires');
+        $partenaires_image = $partenaires['partenaires_image'];
+        ?>
 
-    <h2>
-      <?= $partenaires['partenaires_titre'] ?>
-    </h2>
-    <p>
-      <?= $partenaires['partenaires_texte'] ?>
-    </p>
+        <h2>
+          <?= $partenaires['partenaires_titre'] ?>
+        </h2>
+        <p>
+          <?= $partenaires['partenaires_texte'] ?>
+        </p>
 
-    <?php if ($partenaires['partenaires_link']) : ?>
-    <a href="<?= $partenaires['partenaires_link'] ?>">
-      <?= $partenaires['partenaires_link_texte'] ?>
-    </a>
-    <?php endif; ?>
-    <img src="<?= $partenaires_image['url'] ?>" alt="<?= $partenaires_image['caption'] ?>">
+        <?php if ($partenaires['partenaires_link']) : ?>
+        <a href="<?= $partenaires['partenaires_link'] ?>">
+          <?= $partenaires['partenaires_link_texte'] ?>
+        </a>
+        <?php endif; ?>
+      </div>
+        <img src="<?= $partenaires_image['url'] ?>" alt="<?= $partenaires_image['caption'] ?>"class="rounded img-fluid">
   </div>
 
+
+  </div>
+</div>
 </div>
 
 <?php get_footer(); ?>
