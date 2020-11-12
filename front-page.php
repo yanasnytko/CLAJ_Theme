@@ -27,7 +27,7 @@
         <?= $intro['intro_texte'] ?>
       </p>
       <?php if ($intro['link']) : ?>
-      <a href="<?= $intro['link']['url'] ?>">
+      <a href="<?= $intro['link']['url'] ?>" class="btn btn-success">
         <?= $intro['link_texte'] ?>
       </a>
         </div>
@@ -70,11 +70,10 @@
   </div>
 
   <!-- Les antennes -->
-  <div>
   
-        <?php get_template_part('parts/antennes'); ?>
+    
+            <?php get_template_part('parts/antennes'); ?>
           
-  
   </div>
 
   <!-- Nos outils et animations -->
@@ -99,7 +98,7 @@
           <?= $outils['Texte'] ?>
         </p>
           <?php if ($outils['link']) : ?>
-          <a href="<?= $outils['link'] ?>">
+          <a href="<?= $outils['link'] ?>"class="btn btn-success">
           <?= $outils['link_texte'] ?>
           </a>
         <?php endif; ?>
@@ -124,7 +123,7 @@
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <?php if ($actus['link']) : ?>
-        <a href="<?= $actus['link'] ?>">
+        <a href="<?= $actus['link'] ?>" class="btn btn-success">
           <?= $actus['link_texte'] ?>
         </a>
         <?php endif; ?>

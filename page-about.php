@@ -87,7 +87,7 @@
           </p>
 
           <?php if ($publics['publics_link']) : ?>
-          <a href="<?= $publics['publics_link']['url'] ?>">
+          <a href="<?= $publics['publics_link']['url'] ?>"class="btn btn-success">
             <?= $publics['publics_link_text'] ?>
           </a>
           <?php endif; ?>
@@ -150,7 +150,7 @@
         </p>
 
         <?php if ($partenaires['partenaires_link']) : ?>
-        <a href="<?= $partenaires['partenaires_link'] ?>">
+        <a href="<?= $partenaires['partenaires_link'] ?>" class="btn btn-success">
           <?= $partenaires['partenaires_link_texte'] ?>
         </a>
         <?php endif; ?>

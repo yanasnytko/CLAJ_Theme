@@ -5,7 +5,7 @@
   <?php single_cat_title(); ?>
 </h1>
 
-<div class="col-12">
+      <div class="col-12">
 
   <?php
   if (have_posts()) {
@@ -32,6 +32,8 @@
 
     <a href="<?php the_permalink(); ?>" class="btn btn-success">Read more</a>
 
+
+    
   </div>
 
   <?php

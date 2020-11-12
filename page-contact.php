@@ -11,8 +11,6 @@
   </div>
 <div class="container">
 <div class="row">
-
-
 <div class="col-sm-12 col-md-4 col-lg-4 ">
   <!-- Tu ne trouves pas d’antenne dans ton quartier ? -->
   <div class="card card-body">
@@ -28,9 +26,8 @@
     </p>
     <a href="tel:<?= $urgence['tel'] ?>"><?= $urgence['tel'] ?></a>
     </div>
-
-    </div>
-  <div class="col-sm-12 col-md-3 col-lg-3 ">
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4 ">
   <!-- reseaux -->
   <div class="card card-body">
     <?php
@@ -55,7 +52,7 @@
   </div>
 
   <!-- Image -->
-  <div>
+  <!--<div>-->
   <div class="col-sm-12 col-md-4 col-lg-4 ">
     <?php
     $image = get_field('image');
@@ -63,7 +60,7 @@
 
     <img src="<?= $image['url'] ?>" alt="<?= $image['caption'] ?>"class="rounded img-fluid">
   </div>
-  </div>
+  <!--</div>-->
 
   </div>
   </div>
@@ -120,7 +117,7 @@
           <?= $pas_quartier['texte'] ?>
         </p>
         <?php if ($pas_quartier['link']) : ?>
-        <a href="<?= $pas_quartier['link']['url'] ?>">
+        <a href="<?= $pas_quartier['link']['url'] ?>" class="btn btn-success">
           <?= $pas_quartier['link_texte'] ?>
         </a>
         <?php endif; ?>
