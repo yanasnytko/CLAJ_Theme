@@ -7,47 +7,47 @@
   <div>
   <div class="container-fluid">
     <div class="row">
-    <div class="col  bg-success">
+    <div class="col  bg-success text-light mx-auto py-4 ">
     <h4>
       <?= get_option('nom'); ?>
     </h4>
     <address>
       <?= get_option('adresse'); ?>
     </address>
-    <a href="tel:<?= get_option('tel'); ?>"><?= get_option('tel'); ?></a>
-    <a href="mailto:<?= get_option('mail'); ?>"><?= get_option('mail'); ?></a>
+    <a class="text-light" href="tel:<?= get_option('tel'); ?>"><?= get_option('tel'); ?></a>
+    <a class="text-light" href="mailto:<?= get_option('mail'); ?>"><?= get_option('mail'); ?></a>
       </div>
       
 
   <!--<div>-->
   
     
-    <div class="col bg-success">
+    <div class="col bg-success text-light mx-auto py-4">
     <h4>
       <?= get_option('titre_urgence'); ?>
     </h4>
-    <a href="tel:<?= get_option('tel_urgence'); ?>"><?= get_option('tel_urgence'); ?></a>
+    <a class="text-light" href="tel:<?= get_option('tel_urgence'); ?>"><?= get_option('tel_urgence'); ?></a>
     </div>
   <!--</div>-->
 
 
   <!--<div>-->
-  <div class="col bg-success ">
+  <div class="col bg-success text-light mx-auto py-4 ">
     <h4>
       <?= get_option('titre_liens'); ?>
     </h4>
-    <a href="<?= get_option('facebook'); ?>" target="_blank">Facebook de CLAJ</a>
+    <a class="text-light" href="<?= get_option('facebook'); ?>" target="_blank">Facebook de CLAJ</a>
     </div>
 
   <!--</div>-->
 
   <!--<div>-->
-  <div class="col bg-success ">
-    <a href="<?= get_option('fwb'); ?>" target="_blank">Site de Fédération Wallonie-Bruxelles</a>
+  <div class="col bg-success text-light mx-auto py-4">
+    <a class="text-light" href="<?= get_option('fwb'); ?>" target="_blank">Site de Fédération Wallonie-Bruxelles</a>
     
 
   
-  <div class="col bg-success ">
+  <div class="col bg-success text-light ">
   <?php
   if (is_active_sidebar('footer_copyright_text')) {
     dynamic_sidebar('footer_copyright_text');

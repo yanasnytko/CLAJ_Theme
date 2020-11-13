@@ -47,6 +47,9 @@ nav {
   background-color: var(--blanc);
   
 }
+.footer{
+  color:var(--blanc);
+}
 
 
 /* LIENS */
@@ -54,8 +57,9 @@ a {
   color: var(--texte);
 }
 a:hover {
-  color: var(--logo);
+  color: var(--highlight);
   text-decoration: none;
+  
 }
 .menu-item {
   margin: 20px;
@@ -72,10 +76,10 @@ a:hover {
 /*container bootstrap*/
 .container{
   
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   
 }
 
