@@ -19,22 +19,24 @@
         $intro = get_field('intro');
         $intro_image = $intro['intro_image'];
         ?>
-
+        <div class="intro-text">
         <h2>
           <?= $intro['titre'] ?>
         </h2>
       <p>
         <?= $intro['intro_texte'] ?>
       </p>
+      </div>
       <?php if ($intro['link']) : ?>
-      <a href="<?= $intro['link']['url'] ?>" class="btn btn-success">
+      <a href="<?= $intro['link']['url'] ?>" class="btn btn-light ">
         <?= $intro['link_texte'] ?>
       </a>
+        
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 ">
     <?php endif; ?>
     <img src="<?php echo $intro_image['url'] ?>" alt="<?= $intro_image['caption'] ?> "class="rounded img-fluid">
-
+    
       </div>
     </div>
   </div>
@@ -51,6 +53,7 @@
         ?>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="qui">
         <h2>
           <?= $pour['titre'] ?>
         </h2>
@@ -58,6 +61,9 @@
         <p>
         <?= $pour['texte'] ?>
         </p>
+      </div>
+
+
       </div>
       </div>
     </div>
@@ -90,6 +96,7 @@
         <img src="<?= $outils_image['url'] ?>" alt="<?= $outils_image['caption'] ?>"class="rounded img-fluid">
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="outils">
         <h2>
           <?= $outils['titre'] ?>
         </h2>
@@ -97,8 +104,10 @@
         <p>
           <?= $outils['Texte'] ?>
         </p>
+      </div>
+
           <?php if ($outils['link']) : ?>
-          <a href="<?= $outils['link'] ?>"class="btn btn-success">
+          <a href="<?= $outils['link'] ?>"class="btn btn-light">
           <?= $outils['link_texte'] ?>
           </a>
         <?php endif; ?>
@@ -123,7 +132,7 @@
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <?php if ($actus['link']) : ?>
-        <a href="<?= $actus['link'] ?>" class="btn btn-success">
+        <a href="<?= $actus['link'] ?>" class="btn btn-light">
           <?= $actus['link_texte'] ?>
         </a>
         <?php endif; ?>
@@ -143,21 +152,33 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6">
+        
         <?php
         $urgence = get_field('urgence');
         $urgence_image = $urgence['image'];
         ?>
+
+
       </div>
+
+      
       <div class="col-sm-12 col-md-6 col-lg-6">
+
+      
         <h2>
           <?= $urgence['titre'] ?>
         </h2>
         <p>
         <?= $urgence['texte'] ?>
         </p>
+    
+
         <a href="tel:<?= $urgence['tel'] ?>"><?= $urgence['tel'] ?></a>
+      
       </div>
       <img src="<?= $urgence_image['url'] ?>" alt="<?= $urgence_image['caption'] ?>">
+
+
 
     </div>
   </div>

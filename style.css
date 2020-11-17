@@ -48,7 +48,12 @@ nav {
   
 }
 .footer{
-  color:var(--blanc);
+  color:var(--logo);
+  margin-top: 250px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
 
 
@@ -73,14 +78,42 @@ a:hover {
 }
 
 
+
 /*container bootstrap*/
 .container{
+  margin-top: 10px;
+
   
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+}
+.btn{
+  background-color:var(--highlight);
+  color:var(--blanc);
+  border-radius: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:3px ;
+  padding-bottom: 3px;
+  font-size: 22px;
+}
+
+.intro-text{
+
+  width: 100%;
+  margin-top: 100px;
+  margin-right: 20px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   
+}
+
+.outils{
+  margin-top: 110px;
+}
+
+.qui{
+  
+  margin-top: 70px;
 }
 
 
@@ -90,13 +123,15 @@ a:hover {
   height: 100%;
   
 }
+
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
   min-width: 400px;
   /* Center slide text vertically */
-  display: -webkit-box;
+  display:  -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;

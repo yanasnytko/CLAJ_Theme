@@ -117,7 +117,7 @@
           <?= $pas_quartier['texte'] ?>
         </p>
         <?php if ($pas_quartier['link']) : ?>
-        <a href="<?= $pas_quartier['link']['url'] ?>" class="btn btn-success">
+        <a href="<?= $pas_quartier['link']['url'] ?>" class="btn btn-light">
           <?= $pas_quartier['link_texte'] ?>
         </a>
         <?php endif; ?>

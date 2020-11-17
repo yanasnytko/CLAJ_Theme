@@ -36,6 +36,7 @@
   <div>
   <div class="container">
     <div class="row">
+      
       <div class="col-sm-12 col-md-6 col-lg-6">
         <?php
         $mission = get_field('mission');
@@ -87,7 +88,7 @@
           </p>
 
           <?php if ($publics['publics_link']) : ?>
-          <a href="<?= $publics['publics_link']['url'] ?>"class="btn btn-success">
+          <a href="<?= $publics['publics_link']['url'] ?>"class="btn btn-light">
             <?= $publics['publics_link_text'] ?>
           </a>
           <?php endif; ?>
@@ -102,7 +103,6 @@
 
   <div>
   
-
         <?php get_template_part('parts/antennes'); ?>
       </div>
     </div>
@@ -113,6 +113,8 @@
   <div>
   <div class="container">
     <div class="row">
+       <div class="col-sm-12 col-md-6 col-lg-6 ">
+      </div>
       <div class="col-sm-12 col-md-6 col-lg-6 ">
 
         <?php
@@ -126,8 +128,8 @@
           <?= $confident['confident_texte'] ?>
         </p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-6 ">
-      </div>
+
+    
     </div>
   </div>
   </div>
@@ -150,7 +152,7 @@
         </p>
 
         <?php if ($partenaires['partenaires_link']) : ?>
-        <a href="<?= $partenaires['partenaires_link'] ?>" class="btn btn-success">
+        <a href="<?= $partenaires['partenaires_link'] ?>" class="btn btn-light">
           <?= $partenaires['partenaires_link_texte'] ?>
         </a>
         <?php endif; ?>
