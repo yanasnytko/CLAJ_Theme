@@ -11,15 +11,16 @@
   </div>
 
   <!-- Intro -->
-  <div>
+  
   <div class="container"> 
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="intro-text">
         <?php
         $intro = get_field('intro');
         $intro_image = $intro['intro_image'];
         ?>
-        <div class="intro-text">
+        
         <h2>
           <?= $intro['titre'] ?>
         </h2>
@@ -33,14 +34,19 @@
       </a>
         
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 ">
-    <?php endif; ?>
-    <img src="<?php echo $intro_image['url'] ?>" alt="<?= $intro_image['caption'] ?> "class="rounded img-fluid">
-    
+
+          <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="image-intro">
+            <?php endif; ?>
+          <img src="<?php echo $intro_image['url'] ?>" alt="<?= $intro_image['caption'] ?> "class="rounded img-fluid">
+        </div>
       </div>
     </div>
   </div>
-  </div>
+  
+
+
+
   <!-- Pour qui, pour quoi ? -->
   <div>
   <div  class="container"> 
@@ -68,10 +74,14 @@
       </div>
     </div>
   </div>
+  <!--puzzle-->
+  <div class="container">
+    <div class="puzzle">
     <a href="<?= $pour['link'] ?>">
       <img src="<?= $pour_image['url'] ?>" alt="<?= $pour_image['caption'] ?>" class="img-fluid" alt="Responsive image">
     </a>
-
+    </div>
+    </div>
   
   </div>
 
