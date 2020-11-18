@@ -12,44 +12,46 @@
 
   <!-- Intro -->
   
-  <div class="container"> 
+<div class="container-fluid"> 
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="intro-text">
-        <?php
-        $intro = get_field('intro');
-        $intro_image = $intro['intro_image'];
-        ?>
+        <div class="intro">
+          <?php
+          $intro = get_field('intro');
+          $intro_image = $intro['intro_image'];
+          ?>
         
-        <h2>
-          <?= $intro['titre'] ?>
-        </h2>
-      <p>
-        <?= $intro['intro_texte'] ?>
-      </p>
-      </div>
-      <?php if ($intro['link']) : ?>
-      <a href="<?= $intro['link']['url'] ?>" class="btn btn-light ">
-        <?= $intro['link_texte'] ?>
-      </a>
+            <h2>
+              <?= $intro['titre'] ?>
+            </h2>
+            <div class="intro-text">
+          <p>
+            <?= $intro['intro_texte'] ?>
+          </p>
         
+          <?php if ($intro['link']) : ?>
+          <a href="<?= $intro['link']['url'] ?>" class="btn btn-light ">
+          <?= $intro['link_texte'] ?>
+          </a>
+          </div>
         </div>
+      </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="image-intro">
-            <?php endif; ?>
+              <?php endif; ?>
           <img src="<?php echo $intro_image['url'] ?>" alt="<?= $intro_image['caption'] ?> "class="rounded img-fluid">
         </div>
-      </div>
+      <!--</div>-->
     </div>
-  </div>
+  
   
 
 
 
   <!-- Pour qui, pour quoi ? -->
-  <div>
-  <div  class="container"> 
+  <!--<div>-->
+  <div  class="container"> -->
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6">
 
@@ -60,20 +62,20 @@
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="qui">
-        <h2>
-          <?= $pour['titre'] ?>
-        </h2>
+          <h2>
+            <?= $pour['titre'] ?>
+          </h2>
       
-        <p>
-        <?= $pour['texte'] ?>
-        </p>
-      </div>
+          <p>
+          <?= $pour['texte'] ?>
+          </p>
+        </div>
 
 
       </div>
       </div>
     </div>
-  </div>
+  <!--</div>-->
   <!--puzzle-->
   <div class="container">
     <div class="puzzle">
@@ -97,25 +99,26 @@
   <div class="container">
     <div class="row"> 
       <div class="col-sm-12 col-md-6 col-lg-6">
+        
+          <?php
+          $outils = get_field('outils');
+          $outils_image = $outils['image'];
+          ?>
 
-        <?php
-        $outils = get_field('outils');
-        $outils_image = $outils['image'];
-        ?>
-
-        <img src="<?= $outils_image['url'] ?>" alt="<?= $outils_image['caption'] ?>"class="rounded img-fluid">
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="outils">
-        <h2>
+          <img src="<?= $outils_image['url'] ?>" alt="<?= $outils_image['caption'] ?>"class="rounded img-fluid">
+          </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="outils">
+          <h2>
           <?= $outils['titre'] ?>
-        </h2>
+          </h2>
 
-        <p>
+          <p>
           <?= $outils['Texte'] ?>
-        </p>
-      </div>
+          </p>
+        
 
+        <div>
           <?php if ($outils['link']) : ?>
           <a href="<?= $outils['link'] ?>"class="btn btn-light">
           <?= $outils['link_texte'] ?>

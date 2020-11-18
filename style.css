@@ -48,6 +48,7 @@ nav {
   background-color: var(--blanc);
   
 }
+/*
 .footer{
   color:var(--logo);
   margin-top: 250px;
@@ -55,7 +56,7 @@ nav {
   margin-left: 50px;
   margin-right: 50px;
 
-}
+}*/
 
 
 /* LIENS */
@@ -82,14 +83,19 @@ a:hover {
 
 /*container bootstrap*/
 .container{
-  margin-left: 70px;
-  margin-right: 70px;
-  
+max-width:100%;
+margin-top: 10px;
 
+margin-right: 70px;
 
 }
 
-
+.container-fluid{
+  max-width:100%;
+  margin-top: 100px !;
+  
+  margin-right: 70px;
+}
 
 
 .btn{
@@ -103,25 +109,127 @@ a:hover {
   font-size: 22px;
 }
 
-.intro-text{
 
-  width: 100%;
-  margin-top: 100px;
-  margin-right: 70px;
-  padding-right: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+.intro{
+
   
+  margin-top: 100px;
+  margin-left: 150px;
+
+}
+
+.p{
+  margin-top: 10px;
+}
+
+.into-text{
+  margin-top: 250px;
 }
 
 .outils{
-  margin-top: 110px;
+  
+  margin-right: 100px;
 }
 
-.qui{
+
+/*footer*/
+.footer{
+  background-image: url("../../../images/Vague.png");
+  width: 100%;
+  height: 575px;
+  margin-top: 30px;
   
-  margin-top: 70px;
 }
+.footer-contact{
+  
+  color:white;
+  margin-top:40px;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.footer-numero{
+  
+  color:white;
+  margin-top:40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 15px;
+
+}
+.footer-plan{
+  
+  color:white;
+  margin-top:40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.footer-adresses{
+  
+  color:white;
+  margin-top:40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.footer-social{
+  
+  color:white;
+  margin-top:40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.footer-logo-fed{
+  
+  color:white;
+  margin-top:40px;
+  margin-left: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.footer-copy{
+  
+  color:white;
+  margin-top:20px;
+  margin-left: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.image-ville{
+  background-image:url("../../../images/Frame.png");
+  width: 100%;
+  height: 217px;
+
+  
+}
+
 
 
 /* SWIPER - le slider lateral pour les antennes */
