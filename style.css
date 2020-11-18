@@ -28,15 +28,21 @@ Text Domain: clajtheme
   float: left;
 }
 
+html {
+  min-height: 100vh;
+  height: 100vh;
+}
 body {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   background-color: var(--blanc);
   color: var(--texte);
+  min-height: 100vh;
+  height: 100vh;
 }
 
 h1, h2, h3 {
-  color: var(--logo);
+  color: var(--texte);
   font-family: "Rubik", sans-serif;
 }
 
@@ -67,6 +73,57 @@ a:hover {
   margin-right: 20px;
 }
 
+/*container bootstrap*/
+.container{
+  margin: 0 auto;
+  /* margin-left: 70px;
+  margin-right: 70px; */
+}
+/* .row > .col-md-6 {
+  margin-bottom: 50px;
+} */
+.row {
+  margin-top: 50px;
+}
+
+footer {
+  color: var(--blanc);
+  background-color: var(--logo);
+  margin-top: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn{
+  background-color:var(--highlight);
+  color:var(--blanc);
+  border-radius: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:3px ;
+  padding-bottom: 3px;
+  font-size: 22px;
+}
+
+.intro-text{
+
+  width: 100%;
+  margin-top: 50px;
+  padding-right: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.outils{
+  margin-top: 110px;
+}
+
+.qui{
+  margin-top: 70px;
+}
+
 /* SWIPER - le slider lateral pour les antennes */
 .swiper-container {
   width: 100%;
@@ -90,4 +147,20 @@ a:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+/* FACEBOOK */
+
+.efbl-view-on-fb, .no-anchor-style .link .efbl-mr-1 {
+  background-color:var(--highlight);
+  color:var(--blanc);
+}
+
+.efbl-view-share a, .efbl-d-flex a, .efbl-justify-content-between a, .efbl-align-items-center a, .efbl-mb-1 a, .efbl-mt-1 a {
+  background-color:var(--highlight);
+  color:var(--blanc);
+}
+.esf-share, button {
+  background-color:var(--highlight);
+  color:var(--blanc);
 }

@@ -2,15 +2,17 @@
 <?php
 $partenaires = get_field('partenaires');
 ?>
+<div class="row">
+  <h2>
+    <?= $partenaires['titre'] ?>
+  </h2>
+  <p>
+    <?= $partenaires['texte'] ?>
+  </p>
+</div>
 
-<h2>
-  <?= $partenaires['titre'] ?>
-</h2>
-<p>
-  <?= $partenaires['texte'] ?>
-</p>
 
-<div class="swiper-container">
+<div class="swiper-container row">
 
   <div class="swiper-wrapper">
 
@@ -22,7 +24,8 @@ $partenaires = get_field('partenaires');
         $partenaire_1_image = $partenaire_1['image']
         ?>
       <a href="<?= $partenaire_1['link'] ?>">
-        <img src="http://bootstrap.test:8000/wp-content/uploads/2020/11/1_alecoutedesjeunes.jpg">
+        <img src="<?= $partenaire_1_image['url'] ?>" alt="<?= $partenaire_1_image['caption'] ?>"
+          class="rounded img-fluid">
       </a>
       <h4>
         <?= $partenaire_1['nom'] ?>
@@ -42,7 +45,8 @@ $partenaires = get_field('partenaires');
         $partenaire_2_image = $partenaire_2['image']
         ?>
       <a href="<?= $partenaire_2['link'] ?>">
-        <!-- <img src="http://bootstrap.test:8000/wp-content/uploads/2020/11/6_Ladebrouille.jpg"> -->
+        <img src="<?= $partenaire_2_image['url'] ?>" alt="<?= $partenaire_2_image['caption'] ?>"
+          class="rounded img-fluid">
       </a>
       <h4>
         <?= $partenaire_2['nom'] ?>
@@ -62,7 +66,8 @@ $partenaires = get_field('partenaires');
         $partenaire_3_image = $partenaire_3['image']
         ?>
       <a href="<?= $partenaire_3['link'] ?>">
-        <img src="<?= $partenaire_3_image['url'] ?>" alt="<?= $partenaire_3_image['caption'] ?>">
+        <img src="<?= $partenaire_3_image['url'] ?>" alt="<?= $partenaire_3_image['caption'] ?>"
+          class="rounded img-fluid">
       </a>
       <h4>
         <?= $partenaire_3['nom'] ?>
@@ -82,7 +87,8 @@ $partenaires = get_field('partenaires');
         $partenaire_4_image = $partenaire_4['image']
         ?>
       <a href="<?= $partenaire_4['link'] ?>">
-        <img src="<?= $partenaire_4_image['url'] ?>" alt="<?= $partenaire_4_image['caption'] ?>">
+        <img src="<?= $partenaire_4_image['url'] ?>" alt="<?= $partenaire_4_image['caption'] ?>"
+          class="rounded img-fluid">
       </a>
       <h4>
         <?= $partenaire_4['nom'] ?>
@@ -99,5 +105,6 @@ $partenaires = get_field('partenaires');
   <!-- Add Pagination -->
   <div class="swiper-pagination"></div>
 </div>
-
-<a href="<?= $partenaires['link'] ?>"><?= $partenaires['link_texte'] ?></a>
+<div class="row">
+  <a class="btn btn-light" href="<?= $partenaires['link'] ?>"><?= $partenaires['link_texte'] ?></a>
+</div>

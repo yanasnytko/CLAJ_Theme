@@ -30,7 +30,7 @@
     <?php endif; ?>
     <?php the_excerpt(); ?>
 
-    <a href="<?php the_permalink(); ?>" class="btn btn-success">Read more</a>
+    <a href="<?php the_permalink(); ?>" class="btn btn-light">Read more</a>
 
   </div>
 

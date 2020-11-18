@@ -4,40 +4,52 @@
 
 <footer class="blog-footer">
 
-  <div>
-    <h4>
-      <?= get_option('nom'); ?>
-    </h4>
-    <address>
-      <?= get_option('adresse'); ?>
-    </address>
-    <a href="tel:<?= get_option('tel'); ?>"><?= get_option('tel'); ?></a>
-    <a href="mailto:<?= get_option('mail'); ?>"><?= get_option('mail'); ?></a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-3 col-lg-3 text-light mx-auto py-4">
+        <h4>
+          <?= get_option('nom'); ?>
+        </h4>
+        <address>
+          <?= get_option('adresse'); ?>
+        </address>
+        <a class="text-light" href="tel:<?= get_option('tel'); ?>"><?= get_option('tel'); ?></a>
+        <a class="text-light" href="mailto:<?= get_option('mail'); ?>"><?= get_option('mail'); ?></a>
+      </div>
+
+      <div class="col-sm-12 col-md-3 col-lg-3 text-light mx-auto py-4">
+        <h4>
+          <?= get_option('titre_urgence'); ?>
+        </h4>
+        <a class="text-light" href="tel:<?= get_option('tel_urgence'); ?>"><?= get_option('tel_urgence'); ?></a>
+      </div>
+
+      <div class="col-sm-12 col-md-3 col-lg-3 text-light mx-auto py-4">
+        <h4>
+          <?= get_option('titre_liens'); ?>
+        </h4>
+        <a class="text-light" href="<?= get_option('facebook'); ?>" target="_blank">Facebook de CLAJ</a>
+      </div>
+
+      <div class="col-sm-12 col-md-3 col-lg-3 text-light mx-auto py-4">
+        <a class="text-light" href="<?= get_option('fwb'); ?>" target="_blank">Site de Fédération Wallonie-Bruxelles</a>
+      </div>
+
+      <!-- <div class="col-sm-12 col-md-3 col-lg-3 text-light mx-auto py-4">
+        <?php
+        /* if (is_active_sidebar('footer_copyright_text')) {
+          dynamic_sidebar('footer_copyright_text');
+        } */
+        ?>
+      </div> -->
+    </div>
+    <!-- <div class="row">
+      <div class="col-12">
+        image de la ville <img>
+      </div>
+    </div> -->
   </div>
 
-  <div>
-    <h4>
-      <?= get_option('titre_urgence'); ?>
-    </h4>
-    <a href="tel:<?= get_option('tel_urgence'); ?>"><?= get_option('tel_urgence'); ?></a>
-  </div>
-
-  <div>
-    <h4>
-      <?= get_option('titre_liens'); ?>
-    </h4>
-    <a href="<?= get_option('facebook'); ?>" target="_blank">Facebook de CLAJ</a>
-  </div>
-
-  <div>
-    <a href="<?= get_option('fwb'); ?>" target="_blank">Site de Fédération Wallonie-Bruxelles</a>
-  </div>
-
-  <?php
-  if (is_active_sidebar('footer_copyright_text')) {
-    dynamic_sidebar('footer_copyright_text');
-  }
-  ?>
 </footer>
 
 <?php wp_footer(); ?>

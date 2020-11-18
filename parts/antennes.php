@@ -2,18 +2,19 @@
 <?php
 $antennes = get_field('antennes');
 ?>
+<div class="row">
+  <h2>
+    <?= $antennes['antennes_titre'] ?>
+  </h2>
+  <h2>
+    <?= $antennes['titre'] ?>
+  </h2>
+  <p>
+    <?= $antennes['antennes_texte'] ?>
+  </p>
+</div>
 
-<h2>
-  <?= $antennes['antennes_titre'] ?>
-</h2>
-<h2>
-  <?= $antennes['titre'] ?>
-</h2>
-<p>
-  <?= $antennes['antennes_texte'] ?>
-</p>
-
-<div class="swiper-container">
+<div class="swiper-container row">
 
   <div class="swiper-wrapper">
 
