@@ -134,18 +134,19 @@ margin-right: 70px;
 
 /*footer*/
 .footer{
-  background-image: url("../../../images/Vague.png");
+  /*background-image: url("../../../images/Vague.png");*/
+  background-color:#4B9228;
   width: 100%;
   height: 568px;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   
 }
 .footer-contact{
   
   color: var(--blanc);
-  margin-top:40px;
+  /*margin-top:40px;*/
   margin-right: 20px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-left: 80px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -154,10 +155,10 @@ margin-right: 70px;
 .footer-numero{
   
   color:var(--blanc);
-  margin-top:40px;
+  /*margin-top:40px;*/
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -167,10 +168,10 @@ margin-right: 70px;
 .footer-plan{
   
   color:var(--blanc);
-  margin-top:40px;
+  /*margin-top:40px;*/
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -179,10 +180,10 @@ margin-right: 70px;
 .footer-adresses{
   
   color:var(--blanc);
-  margin-top:40px;
+  /*margin-top:40px;*/
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -191,10 +192,10 @@ margin-right: 70px;
 .footer-social{
   
   color:var(--blanc);
-  margin-top:40px;
+  /*margin-top:40px;*/
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -203,9 +204,9 @@ margin-right: 70px;
 .footer-logo-fed{
   
   color:var(--blanc);
-  margin-top:40px;
+  /*margin-top:40px;*/
   margin-left: 20px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-left: 30px;
   padding-right: 80px;
   padding-bottom: 30px;
@@ -225,7 +226,8 @@ margin-right: 70px;
 .image-ville{
   background-image:url("../../../images/Frame.png");
   width: 100%;
-  height: 210px;
+  height: 280px;
+  background-size: cover;
 
   
 }
