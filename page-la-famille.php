@@ -56,7 +56,7 @@
       </p>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $quoi_image['url'] ?>" alt="<?= $quoi_image['caption'] ?>">
+      <img src="<?= $quoi_image ?>" alt="">
     </div>
   </div>
 
@@ -75,7 +75,7 @@
       </p>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $individuel_image['url'] ?>" alt="<?= $individuel_image['caption'] ?>">
+      <img src="<?= $individuel_image ?>" alt="">
     </div>
   </div>
 
@@ -86,7 +86,7 @@
   ?>
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $collectif_image['url'] ?>" alt="<?= $collectif_image['caption'] ?>">
+      <img src="<?= $collectif_image ?>" alt="">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
       <h2>
@@ -113,7 +113,7 @@
       </p>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $prevention_image['url'] ?>" alt="<?= $prevention_image['caption'] ?>">
+      <img src="<?= $prevention_image['url'] ?>" alt="">
     </div>
   </div>
 
@@ -181,7 +181,7 @@
         <?= $public_3['texte'] ?>
       </p>
       <?php if ($public_3['lien']) : ?>
-      <a href="<?= $public_3['lien']['url'] ?>" class="btn btn-light">
+      <a href="<?= $public_3['lien'] ?>" class="btn btn-light">
         <?= $public_3['texte_du_lien'] ?>
       </a>
       <?php endif; ?>

@@ -22,7 +22,7 @@
   </div>
 
   <!-- <div>
-    <?php //get_template_part('parts/partenaires'); 
+    <?php //get_template_part('parts/partenaires');
     ?>
   </div> -->
 
@@ -64,8 +64,7 @@
       <?php endif; ?>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <img src="<?= $partenaire_1_image['url'] ?>" alt="<?= $partenaire_1_image['caption'] ?>"
-        class="rounded img-fluid">
+      <img src="<?= $partenaire_1_image ?>" alt="" class="rounded img-fluid">
     </div>
   </div>
 
@@ -75,8 +74,7 @@
     $partenaire_2_image = $partenaire_2['image'];
     ?>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <img src="<?= $partenaire_2_image['url'] ?>" alt="<?= $partenaire_2_image['caption'] ?>"
-        class="rounded img-fluid">
+      <img src="<?= $partenaire_2_image ?>" alt="" class="rounded img-fluid">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
       <h2>
@@ -113,19 +111,17 @@
       <?php endif; ?>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <img src="<?= $partenaire_3_image['url'] ?>" alt="<?= $partenaire_3_image['caption'] ?>"
-        class="rounded img-fluid">
+      <img src="<?= $partenaire_3_image ?>" alt="" class="rounded img-fluid">
     </div>
   </div>
 
-  <div class="row align-items-center">
+  <div class="row align-items-center container">
     <?php
     $partenaire_4 = get_field('partenaire_4');
     $partenaire_4_image = $partenaire_4['image'];
     ?>
-    <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <img src="<?= $partenaire_4_image['url'] ?>" alt="<?= $partenaire_4_image['caption'] ?>"
-        class="rounded img-fluid">
+    <div class="col-sm-12 col-md-6 col-lg-6 justify-content-center">
+      <img src="<?= $partenaire_4_image ?>" alt="" class="rounded img-fluid justify-content-center">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
       <h2>

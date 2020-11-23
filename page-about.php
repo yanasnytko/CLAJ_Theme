@@ -39,12 +39,18 @@
         <p>
           <?= $mission['mission_texte'] ?>
         </p>
-        <p class="valeur">
-          <?= $mission['mission_valeur_1'] ?>
-        </p>
-        <p class="valeur">
-          <?= $mission['mission_valeur_2'] ?>
-        </p>
+
+        <?php if ($mission['mission_link_1']) : ?>
+        <a href="<?= $mission['mission_link_1'] ?>" class="btn btn-light" target="blanket">
+          <?= $mission['mission_link_1_texte'] ?>
+        </a>
+        <?php endif; ?>
+        <?php if ($mission['mission_link_2']) : ?>
+        <a href="<?= $mission['mission_link_2'] ?>" class="btn btn-light" target="blanket">
+          <?= $mission['mission_link_2_texte'] ?>
+        </a>
+        <?php endif; ?>
+
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
       </div>

@@ -378,6 +378,13 @@ function save_your_fields_meta($post_id)
 add_action('save_post', 'save_your_fields_meta');
 
 // Image Sizes
-
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+
+// ACF Google Map
+function my_acf_google_map_api($api)
+{
+    $api['key'] = 'xxx';
+    return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

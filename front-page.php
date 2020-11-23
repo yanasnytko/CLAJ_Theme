@@ -3,7 +3,16 @@
 <?php get_header(); ?>
 
 <div class="container">
-  <div class="row">
+  <?php
+  $comment = get_field('comment');
+  ?>
+  <?php if ($comment) : ?>
+  <div class="alert alert-danger" role="alert">
+    <?= $comment ?>
+  </div>
+  <?php endif; ?>
+
+  <div class="row align-items-center">
     <!-- Intro -->
     <div class="col-12 col-md-6 intro-text">
       <?php
@@ -28,7 +37,7 @@
   </div>
 
   <!-- Pour qui, pour quoi ? -->
-  <div class="row">
+  <div class="row align-items-center">
     <?php
     $pour = get_field('pour');
     $pour_image = $pour['pour_image'];
@@ -58,7 +67,7 @@
   </div>
 
   <!-- Nos outils et animations -->
-  <div class="row">
+  <div class="row align-items-center">
     <div class="col-sm-12 col-md-6 col-lg-6">
       <?php
       $outils = get_field('outils');
@@ -67,7 +76,7 @@
 
       <img src="<?= $outils_image['url'] ?>" alt="<?= $outils_image['caption'] ?>" class="rounded img-fluid">
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 outils">
+    <div class="col-sm-12 col-md-6 col-lg-6 ">
       <h2>
         <?= $outils['titre'] ?>
       </h2>
@@ -105,7 +114,24 @@
 
   <!-- Nos partenaires -->
   <div>
-    <?php get_template_part('parts/partenaires'); ?>
+    <?php
+    $partenaires = get_field('partenaires');
+    ?>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6"">
+      </div>
+      <div class=" col-sm-12 col-md-6 col-lg-6"">
+        <h2>
+          <?= $partenaires['titre'] ?>
+        </h2>
+        <p>
+          <?= $partenaires['texte'] ?>
+        </p>
+      </div>
+
+    </div>
+    <?php //get_template_part('parts/partenaires');
+    ?>
   </div>
 
   <!-- Une urgence ? -->
@@ -122,7 +148,9 @@
       <p>
         <?= $urgence['texte'] ?>
       </p>
-      <a class="btn btn-light" href="tel:<?= $urgence['tel'] ?>"><?= $urgence['tel'] ?></a>
+      <a href="<?= $urgence['link'] ?>" class="btn btn-light">
+        <?= $urgence['link_texte'] ?>
+      </a>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
       <img src="<?= $urgence_image['url'] ?>" alt="<?= $urgence_image['caption'] ?>" class="rounded img-fluid">

@@ -75,7 +75,15 @@
     <p>
       BIENTOT UNE CARTE ICI
     </p>
-    <?= $map['google_map'] ?>
+
+    <?php
+    $google_map = $map['google_map'];
+    if ($google_map) : ?>
+    <div class="acf-map" data-zoom="16">
+      <div class="marker" data-lat="<?php echo esc_attr($google_map['lat']); ?>"
+        data-lng="<?php echo esc_attr($google_map['lng']); ?>"></div>
+    </div>
+    <?php endif; ?>
   </div>
 
   <!-- Une antenne à proximité -->
