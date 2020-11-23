@@ -60,7 +60,7 @@ a:hover {
   color: var(--highlight);
   text-decoration: none;
 }
-.menu-item a {
+#menu-menu-1 .menu-item a {
   margin: 0 15px;
   color: var(--texte);
   font-size: 14px;
@@ -246,6 +246,13 @@ nav {
 .footer .row {
   margin-top: 0;
 }
+.textwidget a, #menu-plan-du-site a, #menu-antennes a {
+  color:var(--blanc)!important;
+  margin-bottom: 30px;
+}
+.textwidget a:hover, #menu-plan-du-site a:hover, #menu-antennes a:hover {
+  text-decoration: underline;
+}
 .footer-contact, .footer-numero, .footer-plan, .footer-adresses, .footer-social, .footer-logo-fed, .footer-copy {
   color:var(--blanc);
   margin-top:40px;
@@ -256,11 +263,31 @@ nav {
   padding-bottom: 30px;
   font-size: 15px;
 }
-.image-ville{
+.image-ville {
   background-image:url("./img/ville.svg");
   width: 120%;
   height: 290px;
   background-size: cover;
   padding: 0px;
   margin-left: -10%;
+}
+#menu-plan-du-site, #menu-antennes {
+  font-size: 14px;
+  list-style-type: none;
+  color: var(--blanc);
+  line-height: normal;
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+#menu-plan-du-site li, #menu-antennes li {
+  margin-bottom: 6px;
+}
+.wp-image-1027, .wp-image-1026, .wp-image-1011 {
+  max-width: 20px!important;
+  float: left;
+  margin-right: 10px;
+}
+.wp-image-1028 {
+  width: 100px!important;
 }
