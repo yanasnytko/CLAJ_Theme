@@ -168,8 +168,8 @@
 
 <script>
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: "auto",
+  spaceBetween: 60,
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
