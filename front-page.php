@@ -43,10 +43,6 @@
     $pour_image = $pour['pour_image'];
     ?>
     <div class="col-sm-12 col-md-6 col-lg-6 puzzle">
-      <!--puzzle-->
-      <a href="<?= $pour['link'] ?>">
-        <img src="<?= $pour_image['url'] ?>" alt="<?= $pour_image['caption'] ?>" class="img-fluid">
-      </a>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 qui">
       <h2>
@@ -127,6 +123,11 @@
         <p>
           <?= $partenaires['texte'] ?>
         </p>
+        <?php if ($partenaires['link']) : ?>
+        <a href="<?= $partenaires['link'] ?>" class="btn btn-light">
+          <?= $partenaires['link_texte'] ?>
+        </a>
+        <?php endif; ?>
       </div>
 
     </div>

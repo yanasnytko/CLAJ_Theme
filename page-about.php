@@ -75,7 +75,7 @@
         </p>
 
         <?php if ($publics['publics_link']) : ?>
-        <a href="<?= $publics['publics_link']['url'] ?>" class="btn btn-light">
+        <a href="<?= $publics['publics_link'] ?>" class="btn btn-light">
           <?= $publics['publics_link_text'] ?>
         </a>
         <?php endif; ?>

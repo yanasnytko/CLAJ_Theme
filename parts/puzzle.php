@@ -1,4 +1,4 @@
-<div class="col-12">
+<div class="col-12 puzzle" id="puzzle">
   <?php
   $puzzle_image = get_field('puzzle_image');
 
@@ -9,48 +9,48 @@
   ?>
 
   <a href="<?= $puzzle_1['link']['url'] ?>">
-    <h3>
-      <?= $puzzle_1['titre'] ?>
-    </h3>
-  </a>
-  <a href="<?= $puzzle_1['link']['url'] ?>">
-    <p>
-      <?= $puzzle_1['texte'] ?>
-    </p>
+    <div id="jeune">
+      <h3>
+        <?= $puzzle_1['titre'] ?>
+      </h3>
+      <p class="puzzle-texte">
+        <?= $puzzle_1['texte'] ?>
+      </p>
+    </div>
   </a>
 
   <a href="<?= $puzzle_2['link']['url'] ?>">
-    <h3>
-      <?= $puzzle_2['titre'] ?>
-    </h3>
-  </a>
-  <a href="<?= $puzzle_2['link']['url'] ?>">
-    <p>
-      <?= $puzzle_2['texte'] ?>
-    </p>
+    <div id="famille">
+      <h3>
+        <?= $puzzle_2['titre'] ?>
+      </h3>
+      <p class="puzzle-texte">
+        <?= $puzzle_2['texte'] ?>
+      </p>
+    </div>
   </a>
 
   <a href="<?= $puzzle_3['link']['url'] ?>">
-    <h3>
-      <?= $puzzle_3['titre'] ?>
-    </h3>
-  </a>
-  <a href="<?= $puzzle_3['link']['url'] ?>">
-    <p>
-      <?= $puzzle_3['texte'] ?>
-    </p>
-  </a>
-
-  <a href="<?= $puzzle_4['link']['url'] ?>">
-    <h3>
-      <?= $puzzle_4['titre'] ?>
-    </h3>
-  </a>
-  <a href="<?= $puzzle_4['link']['url'] ?>">
-    <p>
-      <?= $puzzle_4['texte'] ?>
-    </p>
+    <div id="milieu">
+      <h3>
+        <?= $puzzle_3['titre'] ?>
+      </h3>
+      <p class="puzzle-texte">
+        <?= $puzzle_3['texte'] ?>
+      </p>
+    </div>
   </a>
 
-  <img src="<?php echo $puzzle_image['url'] ?>" alt="<?= $puzzle_image['caption'] ?>" class="rounded img-fluid">
+  <a href="<?= $puzzle_4['link'] ?>">
+    <div id="ecole">
+      <h3>
+        <?= $puzzle_4['titre'] ?>
+      </h3>
+      <p class="puzzle-texte">
+        <?= $puzzle_4['texte'] ?>
+      </p>
+    </div>
+  </a>
+  <img src="<?php echo $puzzle_image['url'] ?>" alt="<?= $puzzle_image['caption'] ?>" class="rounded img-fluid"
+    id="puzzle-illu">
 </div>
