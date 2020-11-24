@@ -8,7 +8,7 @@
     data-darkreader-inline-fill="" style="--darkreader-inline-fill:#4B9228;"></path>
 </svg> -->
 
-<footer class="footer">
+<!-- <footer class="footer">
 
   <div class="container-fluid">
     <div class="row">
@@ -83,6 +83,71 @@
         <div class="footer-copy">
           <p>CLAJ AMO 2020</p>
         </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="image-ville">
+          <img src="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer> -->
+
+<footer class="footer">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="footer-contact">
+          <?php
+          dynamic_sidebar('footer-1');
+          ?>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="footer-numero">
+          <?php
+          dynamic_sidebar('footer-2');
+          ?>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="footer-plan">
+          <?php
+          dynamic_sidebar('footer-3');
+          ?>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="footer-adresses">
+          <?php
+          dynamic_sidebar('footer-4');
+          ?>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="footer-social">
+          <?php
+          dynamic_sidebar('footer-5');
+          ?>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="footer-logo-fed">
+          <?php
+          dynamic_sidebar('footer-6');
+          ?>
+        </div>
+
       </div>
 
     </div>

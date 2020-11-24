@@ -58,10 +58,10 @@ a {
   margin: 20px 0;
 }
 a:hover {
-  color: var(--highlight);
+  color: var(--highlight)!important;
   text-decoration: none;
 }
-.menu-item a {
+#menu-menu-1 .menu-item a {
   margin: 0 15px;
   color: var(--texte);
   font-size: 14px;
@@ -114,8 +114,8 @@ nav {
   align-self: center;
   text-transform: uppercase;
 }
-#menu-item-53 {
-  padding: 7.5px 12px;
+#menu-item-53 a {
+  padding: 7.5px 21px;
   background-color: var(--logo);
   border-radius: 8px;
   justify-self: end;
@@ -126,7 +126,10 @@ nav {
   margin-left: auto;
 }
 #menu-item-53 a {
-  color: var(--blanc);
+  color: var(--blanc)!important;
+}
+#menu-item-53 a:hover {
+  background-color: var(--highlight)!important;
 }
 .menu-menu-1-container {
   width: 100%;
@@ -152,10 +155,13 @@ nav {
   padding-bottom: 3px;
   font-size: 22px;
 }
+.btn:hover {
+  background-color: #EA339F;
+  color:var(--blanc)!important;
+}
 
 /* Caroussel */
-
-.swiper-wrapper {
+.swiper-wrapper{
   max-height: 600px;
 }
 .swiper-slide {
@@ -196,10 +202,15 @@ nav {
 
 /* FACEBOOK */
 
-.efbl-view-on-fb,
-.no-anchor-style .link .efbl-mr-1 {
-  background-color: var(--highlight) !important;
-  color: var(--blanc) !important;
+/* .efbl-view-on-fb, .no-anchor-style .link .efbl-mr-1 {
+  background-color:var(--highlight)!important;
+  color:var(--blanc)!important;
+} */
+
+.esf-share {
+  outline: none;
+  border: none;
+  margin-top: 20px;
 }
 
 .efbl-view-share a,
@@ -207,14 +218,21 @@ nav {
 .efbl-justify-content-between a,
 .efbl-align-items-center a,
 .efbl-mb-1 a,
-.efbl-mt-1 a {
-  background-color: var(--highlight) !important;
-  color: var(--blanc) !important;
+.efbl-mt-1 a,
+.esf-share {
+  background-color:var(--highlight)!important;
+  color:var(--blanc)!important;
+  height: 34px!important;
 }
-.esf-share,
-button {
-  background-color: var(--highlight) !important;
-  color: var(--blanc) !important;
+.efbl-view-share a:hover,
+.efbl-d-flex a:hover,
+.efbl-justify-content-between a:hover,
+.efbl-align-items-center a:hover,
+.efbl-mb-1 a:hover,
+.efbl-mt-1 a:hover,
+.esf-share:hover {
+  background-color: #EA339F!important;
+  color:var(--blanc)!important;
 }
 
 /* Vagues du fond */
@@ -264,15 +282,17 @@ button {
 .footer .row {
   margin-top: 0;
 }
-.footer-contact,
-.footer-numero,
-.footer-plan,
-.footer-adresses,
-.footer-social,
-.footer-logo-fed,
-.footer-copy {
-  color: var(--blanc);
-  margin-top: 40px;
+
+.textwidget a, #menu-plan-du-site a, #menu-antennes a {
+  color:var(--blanc)!important;
+  margin-bottom: 30px;
+}
+.textwidget a:hover, #menu-plan-du-site a:hover, #menu-antennes a:hover {
+  text-decoration: underline;
+}
+.footer-contact, .footer-numero, .footer-plan, .footer-adresses, .footer-social, .footer-logo-fed, .footer-copy {
+  color:var(--blanc);
+  margin-top:40px;
   margin-right: 20px;
   padding-top: 30px;
   padding-left: 30px;
@@ -281,7 +301,7 @@ button {
   font-size: 15px;
 }
 .image-ville {
-  background-image: url("./img/ville.svg");
+  background-image:url("./img/ville.svg");
   width: 120%;
   height: 290px;
   background-size: cover;
@@ -406,5 +426,227 @@ button {
     font-size: 200%;
     text-transform: uppercase;
     font-weight: 700;
+  }
+}
+#menu-plan-du-site, #menu-antennes {
+  font-size: 14px;
+  list-style-type: none;
+  color: var(--blanc);
+  line-height: normal;
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+#menu-plan-du-site li, #menu-antennes li {
+  margin-bottom: 6px;
+}
+.wp-image-1027, .wp-image-1028, .wp-image-1012 {
+  max-width: 20px!important;
+  float: left;
+  margin-right: 10px;
+}
+.wp-image-1029 {
+  width: 100px!important;
+}
+
+/* PUZZLE */
+.puzzle-texte {
+  font-size: 18px;
+}
+.puzzle h3 {
+  color: var(--logo);
+}
+#jeune {
+  width: 400px;
+  height: 345px;
+  background-image: url("./img/jeune.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 290px;
+}
+#jeune h3, #jeune p {
+  position: relative;
+  top: 115px;
+  left: 250px;
+}
+
+#famille {
+  width: 384px;
+  height: 362px;
+  background-image: url("./img/famille.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -330px;
+}
+#famille h3, #famille p {
+  position: relative;
+  top: 75px;
+  left: 55px;
+}
+#famille .puzzle-texte {
+  width: 230px;
+}
+
+#milieu {
+  width: 360px;
+  height: 405px;
+  background-image: url("./img/milieu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -360px;
+  left: 250px;
+}
+#milieu h3, #milieu p {
+  position: relative;
+  top: 70px;
+  left: 90px;
+  width: 200px;
+}
+
+#ecole {
+  width: 434px;
+  height: 505px;
+  background-image: url("./img/ecole.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1055px;
+  left: 580px;
+}
+#ecole h3, #ecole p {
+  position: relative;
+  top: 215px;
+  left: 160px;
+  width: 200px;
+  color: var(--blanc);
+}
+#puzzle-illu {
+  position: relative;
+  top: -1760px;
+  left: 150px;
+}
+#puzzle {
+  height: 750px;
+  position: relative;
+  top: 25px;
+  left: -50px;
+}
+#puzzle h3, #puzzle p {
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  #puzzle p {
+    visibility: hidden;
+  }
+  #puzzle h3 {
+    font-size: 18px;
+  }
+  #jeune {
+    width: 229px;
+    height: 190px;
+    background-image: url("./img/jeune.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 120px;
+  }
+  #jeune h3 {
+    position: relative;
+    top: 80px;
+    left: 130px;
+  }
+
+  #famille {
+    width: 165px;
+    height: 130px;
+    background-image: url("./img/famille.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -150px;
+  }
+  #famille h3 {
+    position: relative;
+    top: 50px;
+    left: 20px;
+  }
+
+  #milieu {
+    width: 141px;
+    height: 168px;
+    background-image: url("./img/milieu.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -120px;
+    left: 165px;
+  }
+  #milieu h3 {
+    position: relative;
+    top: 50px;
+    left: 20px;
+    width: 100px;
+  }
+
+  #ecole {
+    width: 122px;
+    height: 188px;
+    background-image: url("./img/ecole.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -415px;
+    left: 315px;
+  }
+  #ecole h3 {
+    position: relative;
+    top: 70px;
+    left: 40px;
+    color: var(--blanc);
+  }
+  #puzzle-illu {
+    position: relative;
+    top: -775px;
+    left: 20px;
+  }
+  #puzzle {
+    height: 400px;
+    left: 0;
+    top: 75px;
+    width: 500px;
+  }
+  #puzzle h3{
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #puzzle {
+    transform: scale(0.8);
+    left: -120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #puzzle {
+    transform: scale(0.8);
+    left: -40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #puzzle {
+    transform: scale(0.8);
+    left: -40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #puzzle {
+    transform: scale(0.8);
+    left: -40px;
   }
 }

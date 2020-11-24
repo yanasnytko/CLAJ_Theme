@@ -72,6 +72,7 @@ function bootstrapstarter_widgets_init()
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',
     ));
+
     register_sidebar(array(
         'name'          => 'Sidebar - Inset',
         'id'            => 'sidebar-1',
@@ -84,6 +85,60 @@ function bootstrapstarter_widgets_init()
     register_sidebar(array(
         'name'          => 'Sidebar - Default',
         'id'            => 'sidebar-2',
+        'before_widget' => '<div class="sidebar-module">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer - 1',
+        'id'            => 'footer-1',
+        'before_widget' => '<div class="sidebar-module">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer - 2',
+        'id'            => 'footer-2',
+        'before_widget' => '<div class="sidebar-module">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer - 3',
+        'id'            => 'footer-3',
+        'before_widget' => '<div class="sidebar-module">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer - 4',
+        'id'            => 'footer-4',
+        'before_widget' => '<div class="sidebar-module">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer - 5',
+        'id'            => 'footer-5',
+        'before_widget' => '<div class="sidebar-module">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer - 6',
+        'id'            => 'footer-6',
         'before_widget' => '<div class="sidebar-module">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4>',
