@@ -57,6 +57,7 @@ add_action('after_setup_theme', 'theme_prefix_setup');
 function bootstrapstarter_register_menu()
 {
     register_nav_menu('header-menu', __('Header Menu'));
+    register_nav_menu('hamburger-menu', __('Hamburger Menu'));
 }
 add_action('init', 'bootstrapstarter_register_menu');
 
