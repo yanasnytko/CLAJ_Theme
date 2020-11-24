@@ -7,7 +7,7 @@
   $comment = get_field('comment');
   ?>
   <?php if ($comment) : ?>
-  <div class="alert alert-danger" role="alert">
+  <div class="alert" id="commentaire" role="alert">
     <?= $comment ?>
   </div>
   <?php endif; ?>

@@ -51,6 +51,14 @@ h3 {
   margin-bottom: 14px;
 }
 
+/* COMMENTAIRE */
+#commentaire {
+  background-color: var(--blanc);
+  border: 2px solid var(--logo);
+  color: var(--logo);
+  border-radius: 8px;
+}
+
 /* LIENS */
 a {
   font-size: 24px;
@@ -140,7 +148,6 @@ nav {
   margin: 0 auto;
   width: 100%;
 }
-
 .row {
   margin-top: 50px;
 }
@@ -245,7 +252,7 @@ nav {
 }
 
 /* Vagues du fond */
-.wave-outils {
+.wave {
   /*   background-color: #279037;
  */
   background-image: url("./img/fond-outils.svg");
@@ -318,6 +325,27 @@ nav {
   margin-left: -10%;
 }
 
+#menu-plan-du-site, #menu-antennes {
+  font-size: 14px;
+  list-style-type: none;
+  color: var(--blanc);
+  line-height: normal;
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+#menu-plan-du-site li, #menu-antennes li {
+  margin-bottom: 6px;
+}
+.wp-image-1027, .wp-image-1028, .wp-image-1012 {
+  max-width: 20px!important;
+  float: left;
+  margin-right: 10px;
+}
+.wp-image-1029 {
+  width: 100px!important;
+}
+
 /* HAMBURGER BUTTON */
 .hamburger{
   position: -webkit-sticky;
@@ -371,7 +399,7 @@ nav {
 .fullscreen .modal-header button {
   width: 60px;
   height: 60px;
-  background: var(--highlight);;
+  background: var(--highlight);
 }
 .fullscreen .modal-header .custom-logo-link {
   margin-right: auto;
@@ -415,7 +443,7 @@ nav {
   font-size: 300%;
 }
 
-#menu-item-1017 {
+.modal-body #menu-item-1017 {
   padding: 7.5px 12px;
   background-color: var(--logo);
   border-radius: 8px;
@@ -424,7 +452,7 @@ nav {
   margin: auto;
 }
 
-#menu-item-1017 a {
+.modal-body #menu-item-1017 a {
   color: var(--blanc);
 }
 
@@ -445,26 +473,7 @@ nav {
     font-weight: 700;
   }
 }
-#menu-plan-du-site, #menu-antennes {
-  font-size: 14px;
-  list-style-type: none;
-  color: var(--blanc);
-  line-height: normal;
-  list-style: none;
-  text-align: left;
-  padding-left: 0;
-}
-#menu-plan-du-site li, #menu-antennes li {
-  margin-bottom: 6px;
-}
-.wp-image-1027, .wp-image-1028, .wp-image-1012 {
-  max-width: 20px!important;
-  float: left;
-  margin-right: 10px;
-}
-.wp-image-1029 {
-  width: 100px!important;
-}
+
 
 /* PUZZLE */
 .puzzle-texte {
@@ -481,6 +490,9 @@ nav {
   background-repeat: no-repeat;
   position: relative;
   left: 290px;
+  right: 0;
+  margin-right: 0;
+  padding-right: 0;
 }
 #jeune h3, #jeune p {
   position: relative;
@@ -516,11 +528,21 @@ nav {
   top: -360px;
   left: 250px;
 }
+#milieu:hover {
+  width: 360px;
+  height: 405px;
+  background-image: url("./img/milieu_hover.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 #milieu h3, #milieu p {
   position: relative;
   top: 70px;
   left: 90px;
   width: 200px;
+}
+#milieu:hover h3, #milieu:hover p {
+  color: var(--blanc);
 }
 
 #ecole {
@@ -542,8 +564,8 @@ nav {
 }
 #puzzle-illu {
   position: relative;
-  top: -1760px;
-  left: 150px;
+  top: -1720px;
+  left: 280px;
 }
 #puzzle {
   height: 750px;
@@ -610,7 +632,7 @@ nav {
   }
 
   #ecole {
-    width: 122px;
+    max-width: 122px;
     height: 188px;
     background-image: url("./img/ecole.svg");
     background-size: contain;
@@ -618,23 +640,32 @@ nav {
     position: relative;
     top: -415px;
     left: 315px;
+    right: 0;
+    margin-right: 0;
+    padding-right: 0;
   }
   #ecole h3 {
     position: relative;
     top: 70px;
     left: 40px;
     color: var(--blanc);
+    right: 0;
+    margin-right: 0!important;
+    padding-right: 0;
+    width: fit-content;
   }
   #puzzle-illu {
     position: relative;
-    top: -775px;
+    top: -840px;
     left: 20px;
+    transform: scale(0.6);
   }
   #puzzle {
     height: 400px;
     left: 0;
     top: 75px;
     width: 500px;
+    max-width: 768px;
   }
   #puzzle h3{
     z-index: 1;
@@ -645,12 +676,14 @@ nav {
   #puzzle {
     transform: scale(0.8);
     left: -120px;
+    max-width: 992px;
   }
 }
 @media only screen and (max-width: 768px) {
   #puzzle {
     transform: scale(0.8);
     left: -40px;
+    max-width: 768px;
   }
 }
 
@@ -658,12 +691,16 @@ nav {
   #puzzle {
     transform: scale(0.8);
     left: -40px;
+    max-width: 600px;
+    margin-top: -100px;
   }
 }
 
 @media only screen and (max-width: 375px) {
   #puzzle {
-    transform: scale(0.8);
+    transform: scale(0.6);
     left: -40px;
+    max-width: 375px;
+    margin-top: -155px;
   }
 }
