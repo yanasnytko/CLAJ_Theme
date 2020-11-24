@@ -167,7 +167,7 @@ nav {
 .swiper-slide {
   /* margin-left: 32px; */
   margin-bottom: 60px;
-  width: 20%;
+  width: 30%;
 }
 .swiper-slide .card {
   height: 415px;
@@ -319,6 +319,13 @@ nav {
 }
 
 /* HAMBURGER BUTTON */
+.hamburger{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
 .hamburger .nav{
   display: flex;
   justify-content: start;
@@ -364,6 +371,7 @@ nav {
 .fullscreen .modal-header button {
   width: 60px;
   height: 60px;
+  background: var(--highlight);;
 }
 .fullscreen .modal-header .custom-logo-link {
   margin-right: auto;
