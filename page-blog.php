@@ -10,7 +10,7 @@
     $actus_image = $actus['image'];
     ?>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
+      <h2 class="green-text">
         <?= $actus['titre'] ?>
       </h2>
       <p>
@@ -27,7 +27,7 @@
           </div>
           <div class="col">
             <?php if ($actus['in_link']) : ?>
-            <a href="<?= $actus['in_link'] ?>" class="btn btn-light">
+            <a href="<?= $actus['in_link'] ?>" class="btn btn-light pdf">
               <?= $actus['in_link_texte'] ?>
             </a>
             <?php endif; ?>

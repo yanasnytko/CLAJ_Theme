@@ -10,7 +10,7 @@
       $intro = get_field('intro');
       $intro_image = $intro['image'];
       ?>
-      <h2>
+      <h2 class="green-text">
         <?= $intro['titre'] ?>
       </h2>
       <p>
@@ -27,9 +27,9 @@
       <?php
       $description = get_field('description');
       ?>
-      <h2>
+      <h3 class="green-text">
         <?= $description['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $description['texte'] ?>
       </p>

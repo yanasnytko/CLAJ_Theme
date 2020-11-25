@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <div class="container">
-  <div class="row intro-texte">
+  <div class="row intro-texte align-items-center">
     <?php
     $partenaires = get_field('partenaires');
     $partenaires_image = $partenaires['image'];
@@ -16,7 +16,7 @@
         <?= $partenaires['texte'] ?>
       </p>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 intro-image">
+    <div class="col-sm-12 col-md-6 col-lg-6 intro-image d-flex justify-content-center">
       <img src="<?= $partenaires_image['url'] ?>" alt="<?= $partenaires_image['caption'] ?>" class="rounded img-fluid">
     </div>
   </div>
@@ -26,23 +26,27 @@
     ?>
   </div> -->
 
-  <div class="row align-items-center">
-    <?php
-    $nos_amis = get_field('nos_amis');
-    $nos_amis_image = $nos_amis['image'];
-    ?>
-    <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <img src="<?= $nos_amis_image['url'] ?>" alt="<?= $nos_amis_image['caption'] ?>" class="rounded img-fluid">
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
-        <?= $nos_amis['titre'] ?>
-      </h2>
-      <p>
-        <?= $nos_amis['texte'] ?>
-      </p>
-    </div>
+  <div class="wave wave-small">
 
+  </div>
+  <div class="onwave-group">
+    <div class="row align-items-center d-flex justify-content-between">
+      <?php
+      $nos_amis = get_field('nos_amis');
+      $nos_amis_image = $nos_amis['image'];
+      ?>
+      <div class="col-sm-12 col-md-6 col-lg-6 ">
+        <img src="<?= $nos_amis_image['url'] ?>" alt="<?= $nos_amis_image['caption'] ?>" class="rounded img-fluid">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 ">
+        <h3 class="onwave-text">
+          <?= $nos_amis['titre'] ?>
+        </h3>
+        <p class="onwave-text">
+          <?= $nos_amis['texte'] ?>
+        </p>
+      </div>
+    </div>
   </div>
 
   <div class="row align-items-center">
@@ -51,9 +55,9 @@
     $partenaire_1_image = $partenaire_1['image'];
     ?>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
+      <h3 class="green-text">
         <?= $partenaire_1['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $partenaire_1['texte'] ?>
       </p>
@@ -63,7 +67,7 @@
       </a>
       <?php endif; ?>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 ">
+    <div class="col-sm-12 col-md-6 col-lg-6  d-flex justify-content-center">
       <img src="<?= $partenaire_1_image ?>" alt="" class="rounded img-fluid">
     </div>
   </div>
@@ -73,13 +77,13 @@
     $partenaire_2 = get_field('partenaire_2');
     $partenaire_2_image = $partenaire_2['image'];
     ?>
-    <div class="col-sm-12 col-md-6 col-lg-6 ">
+    <div class="col-sm-12 col-md-6 col-lg-6  d-flex justify-content-center">
       <img src="<?= $partenaire_2_image ?>" alt="" class="rounded img-fluid">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
+      <h3 class="green-text">
         <?= $partenaire_2['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $partenaire_2['texte'] ?>
       </p>
@@ -98,9 +102,9 @@
     $partenaire_3_image = $partenaire_3['image'];
     ?>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
+      <h3 class="green-text">
         <?= $partenaire_3['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $partenaire_3['texte'] ?>
       </p>
@@ -110,7 +114,7 @@
       </a>
       <?php endif; ?>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 ">
+    <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
       <img src="<?= $partenaire_3_image ?>" alt="" class="rounded img-fluid">
     </div>
   </div>
@@ -120,13 +124,13 @@
     $partenaire_4 = get_field('partenaire_4');
     $partenaire_4_image = $partenaire_4['image'];
     ?>
-    <div class="col-sm-12 col-md-6 col-lg-6 justify-content-center">
+    <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
       <img src="<?= $partenaire_4_image ?>" alt="" class="rounded img-fluid justify-content-center">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
+      <h3 class="green-text">
         <?= $partenaire_4['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $partenaire_4['texte'] ?>
       </p>

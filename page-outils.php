@@ -12,7 +12,7 @@
     $outils_intro_image = $outils_intro['image'];
     ?>
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
+      <h2 class="green-text">
         <?= $outils_intro['titre'] ?>
       </h2>
       <p>
@@ -31,15 +31,15 @@
   ?>
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6 ">
-      <h2>
+      <h3 class="green-text">
         <?= $demande['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $demande['texte_1'] ?>
       </p>
     </div>
   </div>
-  <div class="row align-items-center">
+  <div class="row align-items-center mar-bot">
     <div class="col-sm-12 col-md-6 col-lg-6">
       <img src="<?= $demande_image['url'] ?>" alt="<?= $demande_image['caption'] ?>" class="rounded img-fluid">
     </div>
@@ -61,9 +61,9 @@
   <div class="onwave-group">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6 ">
-        <h2 class="onwave-text">
+        <h3 class="onwave-text">
           <?= $outils['titre'] ?>
-        </h2>
+        </h3>
         <p class="onwave-text">
           <?= $outils['texte'] ?>
         </p>
@@ -85,7 +85,8 @@
       <img src="<?= $equinoxe_image_1['url'] ?>" alt="<?= $equinoxe_image_1['caption'] ?>" class="rounded img-fluid">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $equinoxe_logo['url'] ?>" alt="<?= $equinoxe_logo['caption'] ?>" class="rounded img-fluid">
+      <img src="<?= $equinoxe_logo['url'] ?>" alt="<?= $equinoxe_logo['caption'] ?>" class="rounded img-fluid"
+        id="equinoxe-logo">
       <p>
         <?= $equinoxe['texte_1'] ?>
       </p>
@@ -97,7 +98,7 @@
         <?= $equinoxe['texte_2'] ?>
       </p>
       <?php if ($equinoxe['link']) : ?>
-      <a href="<?= $equinoxe['link']['url'] ?>" class="btn btn-light">
+      <a href="<?= $equinoxe['link'] ?>" class="btn btn-light">
         <?= $equinoxe['link_texte'] ?>
       </a>
       <?php endif; ?>

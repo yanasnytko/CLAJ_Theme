@@ -14,9 +14,9 @@
       <h2>
         <?= $description_qui['titre'] ?>
       </h2>
-      <h3>
+      <h2 class="green-text">
         <?= $description_qui['nom'] ?>
-      </h3>
+      </h2>
       <p>
         <?= $description_qui['texte'] ?>
       </p>
@@ -31,7 +31,7 @@
     <div class="col-sm-12 col-md-6 col-lg-6">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <h3>
+      <h3 class="green-text">
         <?= $description_qui['nom_2'] ?>
       </h3>
       <p>
@@ -56,7 +56,7 @@
       </p>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $quoi_image['url'] ?>" alt="<?= $quoi_image['caption'] ?>">
+      <img src="<?= $quoi_image ?>" alt="">
     </div>
   </div>
 
@@ -65,11 +65,11 @@
   $individuel = get_field('individuel');
   $individuel_image = $individuel['image'];
   ?>
-  <div class="row">
+  <div class="row mb-n1">
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <h2>
+      <h3 class="green-text">
         <?= $individuel['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $individuel['texte'] ?>
       </p>
@@ -84,17 +84,22 @@
   $collectif = get_field('collectif');
   $collectif_image = $collectif['image'];
   ?>
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $collectif_image ?>" alt="">
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6">
-      <h2>
-        <?= $collectif['titre'] ?>
-      </h2>
-      <p>
-        <?= $collectif['texte'] ?>
-      </p>
+  <div class="wave wave-small">
+
+  </div>
+  <div class="onwave-group">
+    <div class="row align-items-center">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <img src="<?= $collectif_image ?>" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 mt-n5">
+        <h3 class="onwave-text">
+          <?= $collectif['titre'] ?>
+        </h3>
+        <p class="onwave-text">
+          <?= $collectif['texte'] ?>
+        </p>
+      </div>
     </div>
   </div>
 
@@ -105,15 +110,15 @@
   ?>
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <h2>
+      <h3 class="green-text">
         <?= $prevention['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $prevention['texte'] ?>
       </p>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $prevention_image['url'] ?>" alt="<?= $prevention_image['caption'] ?>">
+      <img src="<?= $prevention_image['url'] ?>" alt="">
     </div>
   </div>
 
@@ -125,9 +130,9 @@
     <div class="col-sm-12 col-md-6 col-lg-6">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
-      <h2>
+      <h3 class="green-text">
         <?= $pour_tous['titre'] ?>
-      </h2>
+      </h3>
       <p>
         <?= $pour_tous['texte'] ?>
       </p>
@@ -142,12 +147,12 @@
   $public_3 = $autres_publics['public_3'];
   ?>
   <div class="row">
-    <h2>
+    <h3 class="green-text">
       <?= $autres_publics['titre'] ?>
-    </h2>
+    </h3>
   </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-4 col-lg-4 card card-body">
+  <div class="row mt-n3 mb-3">
+    <div class="card card-body autres-publics col-sm-12 col-md-4 col-lg-4 antenne-info">
       <h3>
         <?= $public_1['titre'] ?>
       </h3>
@@ -155,12 +160,12 @@
         <?= $public_1['texte'] ?>
       </p>
       <?php if ($public_1['lien']) : ?>
-      <a href="<?= $public_1['lien']['url'] ?>" class="btn btn-light">
+      <a href="<?= $public_1['lien']['url'] ?>" class="esp">
         <?= $public_1['texte_du_lien'] ?>
       </a>
       <?php endif; ?>
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-4 card card-body">
+    <div class="card card-body autres-publics col-sm-12 col-md-4 col-lg-4 antenne-info">
       <h3>
         <?= $public_2['titre'] ?>
       </h3>
@@ -168,12 +173,12 @@
         <?= $public_2['texte'] ?>
       </p>
       <?php if ($public_2['lien']) : ?>
-      <a href="<?= $public_2['lien']['url'] ?>" class="btn btn-light">
+      <a href="<?= $public_2['lien']['url'] ?>" class="esp">
         <?= $public_2['texte_du_lien'] ?>
       </a>
       <?php endif; ?>
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-4 card card-body">
+    <div class="card card-body autres-publics col-sm-12 col-md-4 col-lg-4 antenne-info">
       <h3>
         <?= $public_3['titre'] ?>
       </h3>
@@ -181,7 +186,7 @@
         <?= $public_3['texte'] ?>
       </p>
       <?php if ($public_3['lien']) : ?>
-      <a href="<?= $public_3['lien'] ?>" class="btn btn-light">
+      <a href="<?= $public_3['lien'] ?>" class="esp">
         <?= $public_3['texte_du_lien'] ?>
       </a>
       <?php endif; ?>

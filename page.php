@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <div class="container">
-  <div class="row">
+  <div class="row align-items-center">
 
     <!-- Description -->
     <div class="col-sm-12 col-md-6 col-lg-6">
@@ -19,70 +19,76 @@
         <?= $description['texte'] ?>
       </p>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-6">
+    <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
       <img src="<?= $description_image['url'] ?>" alt="<?= $description_image['caption'] ?>">
     </div>
   </div>
 
-  <div class="row">
-    <!-- Infos -->
-    <div class="card card-body col-sm-12 col-md-4 col-lg-4">
-      <?php
-      $infos = get_field('infos');
-      ?>
 
-      <h2>
-        <?= $infos['titre'] ?>
-      </h2>
-      <p>
-        <?= $infos['adresse'] ?>
-      </p>
-      <a href="tel:<?= $infos['tel'] ?>"><?= $infos['tel'] ?></a>
-      <a href="mailto:<?= $infos['mail'] ?>"><?= $infos['mail'] ?></a>
-    </div>
+  <div class="wave wave-small">
 
-    <!-- horaires -->
-    <div class="card card-body col-sm-12 col-md-4 col-lg-4">
-      <?php
-      $horaires = get_field('horaires');
-      $categorie_1 = $horaires['categorie_1'];
-      $categorie_2 = $horaires['categorie_2'];
-      ?>
+  </div>
+  <div class="onwave-group">
+    <div class="row">
+      <!-- Infos -->
+      <div class="card card-body col-sm-12 col-md-4 col-lg-4 antenne-info">
+        <?php
+        $infos = get_field('infos');
+        ?>
 
-      <h2>
-        <?= $horaires['titre'] ?>
-      </h2>
-      <p>
-        <?= $categorie_1['nom'] ?>&nbsp;: <?= $categorie_1['heures'] ?>
-      </p>
-      <p>
-        <?= $categorie_2['nom'] ?>&nbsp;: <?= $categorie_2['heures'] ?>
-      </p>
-      <p>
-        <?= $horaires['commentaire'] ?>
-      </p>
+        <h3>
+          <?= $infos['titre'] ?>
+        </h3>
+        <p>
+          <?= $infos['adresse'] ?>
+        </p>
+        <a href="tel:<?= $infos['tel'] ?>"><?= $infos['tel'] ?></a>
+        <a href="mailto:<?= $infos['mail'] ?>"><?= $infos['mail'] ?></a>
+      </div>
 
-    </div>
+      <!-- horaires -->
+      <div class="card card-body col-sm-12 col-md-4 col-lg-4 antenne-info">
+        <?php
+        $horaires = get_field('horaires');
+        $categorie_1 = $horaires['categorie_1'];
+        $categorie_2 = $horaires['categorie_2'];
+        ?>
 
-    <!-- reseaux -->
-    <div class="card card-body col-sm-12 col-md-4 col-lg-4">
-      <?php
-      $reseaux = get_field('reseaux');
-      $facebook_image = $reseaux['facebook_picto'];
-      ?>
+        <h3>
+          <?= $horaires['titre'] ?>
+        </h3>
+        <p>
+          <?= $categorie_1['nom'] ?>&nbsp;: <?= $categorie_1['heures'] ?>
+        </p>
+        <p>
+          <?= $categorie_2['nom'] ?>&nbsp;: <?= $categorie_2['heures'] ?>
+        </p>
+        <p>
+          <?= $horaires['commentaire'] ?>
+        </p>
 
-      <h2>
-        <?= $reseaux['titre'] ?>
-      </h2>
-      <p>
-        <?= $reseaux['texte'] ?>
-      </p>
+      </div>
 
-      <?php if ($reseaux['facebook_link']) : ?>
-      <a href="<?= $reseaux['facebook_link'] ?>" target="_blank">
-        <img src="<?= $facebook_image['url'] ?>" alt="<?= $facebook_image['caption'] ?>">
-      </a>
-      <?php endif; ?>
+      <!-- reseaux -->
+      <div class="card card-body col-sm-12 col-md-4 col-lg-4 antenne-info">
+        <?php
+        $reseaux = get_field('reseaux');
+        $facebook_image = $reseaux['facebook_picto'];
+        ?>
+
+        <h3>
+          <?= $reseaux['titre'] ?>
+        </h3>
+        <p>
+          <?= $reseaux['texte'] ?>
+        </p>
+
+        <?php if ($reseaux['facebook_link']) : ?>
+        <a href="<?= $reseaux['facebook_link'] ?>" target="_blank">
+          <img src="<?= $facebook_image['url'] ?>" alt="<?= $facebook_image['caption'] ?>">
+        </a>
+        <?php endif; ?>
+      </div>
     </div>
   </div>
 
@@ -132,12 +138,9 @@
   <!-- ICI IL VA Y AVOIR UN FORMULAIRE -->
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-8">
-      <p>
-        FORMULAIRE IS COMING!
-      </p>
       <?php dynamic_sidebar('sidebar-1') ?>
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-4">
+    <div class="col-sm-12 col-md-4 col-lg-4 align-self-end">
       <img src="<?= $contact_image['url'] ?>" alt="<?= $contact_image['caption'] ?>">
     </div>
   </div>

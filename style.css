@@ -204,6 +204,10 @@ footer {
   width: 26%;
 /*   margin-right: 40px!important;
  */}
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
 .swiper-slide .card {
   height: 415px;
   /* width: 33%; */
@@ -250,6 +254,7 @@ footer {
   outline: none;
   border: none;
   margin-top: 20px;
+  font-size: 0px;
 }
 
 .efbl-view-share a,
@@ -259,9 +264,15 @@ footer {
 .efbl-mb-1 a,
 .efbl-mt-1 a,
 .esf-share {
-  background-color:var(--highlight)!important;
-  color:var(--blanc)!important;
-  height: 34px!important;
+  color:var(--highlight)!important;
+  height: 22px!important;
+  font-size: 0;
+  visibility: hidden;
+  padding: 6px 18px;
+  border-radius: 8px;
+  position: relative;
+  top: -20px;
+  left: 75px;
 }
 .efbl-view-share a:hover,
 .efbl-d-flex a:hover,
@@ -270,8 +281,58 @@ footer {
 .efbl-mb-1 a:hover,
 .efbl-mt-1 a:hover,
 .esf-share:hover {
-  background-color: #EA339F!important;
+  background-color: var(--highlight)!important;
   color:var(--blanc)!important;
+  padding: 6px 18px;
+  border-radius: 8px;
+}
+.efbl-view-share a::after,
+.efbl-d-flex a::after,
+.efbl-justify-content-between a::after,
+.efbl-align-items-center a::after,
+.efbl-mb-1 a::after,
+.efbl-mt-1 a::after {
+  color:var(--highlight)!important;
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--blanc);
+  content: "Voir sur Facebook";
+  font-size: 22px;
+  visibility: visible;
+}
+.efbl-view-share a::after:hover,
+.efbl-d-flex a::after:hover,
+.efbl-justify-content-between a::after:hover,
+.efbl-align-items-center a::after:hover,
+.efbl-mb-1 a::after:hover,
+.efbl-mt-1 a::after:hover {
+  color:var(--blanc)!important;
+  background-color: var(--highlight);
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--highlight);
+  content: "Voir sur Facebook";
+  font-size: 22px;
+  visibility: visible;
+}
+.efbl-view-share a:hover::after,
+.efbl-d-flex a:hover::after,
+.efbl-justify-content-between a:hover::after,
+.efbl-align-items-center a:hover::after,
+.efbl-mb-1 a:hover::after,
+.efbl-mt-1 a:hover::after {
+  color:var(--blanc)!important;
+  background-color: var(--highlight);
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--highlight);
+  content: "Voir sur Facebook";
+  font-size: 22px;
+  visibility: visible;
+}
+.efbl-thumbnail-skin {
+  /* background-color: var(--fond); */
+  margin-top: 10px;
 }
 
 /* Vagues du fond */
@@ -384,6 +445,16 @@ footer {
 }
 .wp-image-1029 {
   width: 100px!important;
+}
+
+@media (max-width: 992px) {
+  .footer-plan, .footer-adresses, .image-ville {
+    visibility: hidden;
+    position: absolute;
+  }
+  footer div .row .col {
+    width: 100%;
+  }
 }
 
 /* HAMBURGER BUTTON */
@@ -646,6 +717,10 @@ footer {
 #puzzle-container-pour {
   margin-bottom: 200px;
 }
+#puzzle-container-pour #puzzle-illu {
+  transform: scale(0.9);
+  left: 200px;
+}
 
 @media only screen and (max-width: 768px) {
   #puzzle p {
@@ -781,9 +856,109 @@ footer {
   position: relative;
   height: 0;
 } */
-#cibles {
-  margin-bottom: 60px;
+.mar-bot {
+  margin-bottom: 80px;
 }
 #partenaires-texte {
   letter-spacing: -0.1px;
+}
+.green-text {
+  color: var(--logo);
+}
+#equinoxe-logo {
+  margin-bottom: 20px;
+}
+
+#urgence-tel {
+  font-size: 20px;
+}
+
+/* FORMULAIRE */
+form {
+  background-color: var(--blanc);
+  width: 800px;
+  padding: 40px 60px;
+  margin-top: -40px;
+  border-radius: 8px;
+}
+input, select {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  padding: 4px 16px;
+  width: 250px;
+  background-color: var(--fond);
+  border: 1px solid var(--blanc);
+  outline: none;
+  border-radius: 8px;
+  height: 48px;
+  width: 250px;
+}
+input:active, input:focus, textarea:hover, textarea:focus {
+  outline: none;
+  border: 1px solid var(--highlight);
+  border-radius: 8px;
+}
+.hidden {
+  display: none;
+}
+textarea {
+  background-color: var(--fond);
+  border: 1px solid var(--blanc);
+  outline: none;
+  border-radius: 8px;
+  width: 600px;
+  padding: 0 16px;
+}
+::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  padding: 16px 3px;
+  width: 250px;
+  background-color: var(--fond);
+  border-radius: 8px;
+}
+.inline, .inline > input {
+  display: inline;
+}
+/* .left-input {
+  float: right;
+} */
+.checkbox {
+position: relative;
+left: -120px;
+}
+.wpcf7-list-item-label {
+  position: relative;
+  left: -90px;
+  vertical-align: middle;
+}
+#rgpd {
+  width: 500px;
+}
+#rgpd-checkbox, .rgpd {
+  float: left;
+  padding-bottom: 30px;
+}
+.rgpd label {
+  width: 45px;
+}
+#send-button {
+  margin-left: 500px;
+  background-color: var(--highlight);
+  color: var(--blanc);
+}
+
+.antenne-info {
+  width: 30%;
+margin: 50px 10px 0 10px;
+}
+.antenne-info a {
+  font-size: 20px;
+}
+.autres-publics {
+  height: 300px;
+}
+.autres-publics a.esp {
+  position: absolute;
+  top: 180px;
 }

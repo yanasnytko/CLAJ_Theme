@@ -56,7 +56,7 @@
     </div>
 
     <!-- Nos publics cibles -->
-    <div class="row" id="cibles">
+    <div class="row mar-bot">
       <div class="col-sm-12 col-md-6 col-lg-6">
         <?php
         $publics = get_field('publics');
