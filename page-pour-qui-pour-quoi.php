@@ -36,7 +36,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" id="puzzle-container-pour">
     <?php get_template_part('parts/puzzle'); ?>
   </div>
 </div>

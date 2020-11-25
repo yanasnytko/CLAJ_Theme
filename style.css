@@ -17,6 +17,8 @@ Text Domain: clajtheme
   --blanc: #ffffff;
   --gris: #e0e0e0;
   --fond: #f8fbee;
+  --wave-large:  url("./img/large-wave.svg");
+  --wave-small:  url("./img/small-wave.svg");
 }
 
 /* Globals */
@@ -44,11 +46,11 @@ h3 {
 }
 h2 {
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 h3 {
   font-size: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 /* COMMENTAIRE */
@@ -56,7 +58,8 @@ h3 {
   background-color: var(--blanc);
   border: 2px solid var(--logo);
   color: var(--logo);
-  border-radius: 8px;
+  border-radius: 16px;
+  margin-top: 20px;
 }
 
 /* LIENS */
@@ -86,6 +89,21 @@ a:hover {
   text-transform: uppercase;
   color: var(--highlight);
   font-size: 22px;
+  font-weight: 700;
+}
+.pdf {
+  color: var(--highlight)!important;
+  border: 1px solid var(--highlight)!important;
+  background-color: var(--blanc)!important;
+  margin-bottom: 100px;
+}
+.pdf:hover {
+  border: 1px solid var(--highlight)!important;
+  color: var(--blanc)!important;
+  background-color: var(--highlight)!important;
+}
+.pdf:first-child {
+  margin-right: 20px;
 }
 
 /* Menu */
@@ -149,33 +167,43 @@ nav {
   width: 100%;
 }
 .row {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+.row:first-child {
+  margin-top: 40px;
+}
+footer {
+  margin-top: 60px;
 }
 
 .btn {
   background-color: var(--highlight);
   color: var(--blanc);
-  border-radius: 8px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  border-radius: 16px;
+  padding: 11.5px 50px;
   font-size: 22px;
+  border: 0;
+  margin-top: 20px;
 }
 .btn:hover {
   background-color: #EA339F;
   color:var(--blanc)!important;
+  border: 0;
 }
 
 /* Caroussel */
-.swiper-wrapper{
-  /* max-height: 600px; */
+.swiper-container {
+  margin-top: 40px;
 }
+.swiper-wrapper{
+/*   transform: translate3d(32%, 0px, 0px);
+ */}
 .swiper-slide {
   /* margin-left: 32px; */
   margin-bottom: 60px;
-  width: 30%;
-}
+  width: 26%;
+/*   margin-right: 40px!important;
+ */}
 .swiper-slide .card {
   height: 415px;
   /* width: 33%; */
@@ -218,11 +246,6 @@ nav {
 
 /* FACEBOOK */
 
-/* .efbl-view-on-fb, .no-anchor-style .link .efbl-mr-1 {
-  background-color:var(--highlight)!important;
-  color:var(--blanc)!important;
-} */
-
 .esf-share {
   outline: none;
   border: none;
@@ -253,20 +276,37 @@ nav {
 
 /* Vagues du fond */
 .wave {
-  /*   background-color: #279037;
- */
-  background-image: url("./img/fond-outils.svg");
-  background-size: 100% auto;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 100px 400px;
 }
-.wave h2,
-.wave h2 ~ p {
+.wave-large {
+  height: 1000px;
+  background-image: var(--wave-large);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wave-large ~ .onwave-group {
+  position: relative;
+  top: -880px;
+  height: 0;
+}
+.wave-small {
+  height: 920px;
+  background-image: var(--wave-small);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wave-small ~ .onwave-group {
+  position: relative;
+  top: -620px;
+  height: 0;
+}
+.onwave-text, .wave .row h3, .wave .row p, .wave .row h2 {
   color: var(--blanc);
 }
 
@@ -499,6 +539,14 @@ nav {
   top: 115px;
   left: 250px;
 }
+#jeune:hover {
+  background-image: url("./img/jeune_hover.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#jeune:hover h3, #jeune:hover p {
+  color: var(--blanc);
+}
 
 #famille {
   width: 384px;
@@ -514,6 +562,14 @@ nav {
   top: 75px;
   left: 55px;
 }
+#famille:hover {
+  background-image: url("./img/famille_hover.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#famille:hover h3, #famille:hover p {
+  color: var(--blanc);
+}
 #famille .puzzle-texte {
   width: 230px;
 }
@@ -528,18 +584,16 @@ nav {
   top: -360px;
   left: 250px;
 }
-#milieu:hover {
-  width: 360px;
-  height: 405px;
-  background-image: url("./img/milieu_hover.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 #milieu h3, #milieu p {
   position: relative;
   top: 70px;
   left: 90px;
   width: 200px;
+}
+#milieu:hover {
+  background-image: url("./img/milieu_hover.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #milieu:hover h3, #milieu:hover p {
   color: var(--blanc);
@@ -560,12 +614,21 @@ nav {
   top: 215px;
   left: 160px;
   width: 200px;
+}
+#ecole:hover {
+  background-image: url("./img/ecole_hover.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#ecole:hover h3, #ecole:hover p {
   color: var(--blanc);
 }
+
 #puzzle-illu {
   position: relative;
   top: -1720px;
   left: 280px;
+  height: 0;
 }
 #puzzle {
   height: 750px;
@@ -575,6 +638,13 @@ nav {
 }
 #puzzle h3, #puzzle p {
   z-index: 1;
+}
+.puzzle-container {
+  position: relative;
+  height: 0;
+}
+#puzzle-container-pour {
+  margin-bottom: 200px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -659,6 +729,7 @@ nav {
     top: -840px;
     left: 20px;
     transform: scale(0.6);
+    height: 0;
   }
   #puzzle {
     height: 400px;
@@ -666,6 +737,7 @@ nav {
     top: 75px;
     width: 500px;
     max-width: 768px;
+    margin-bottom: 50px;
   }
   #puzzle h3{
     z-index: 1;
@@ -703,4 +775,15 @@ nav {
     max-width: 375px;
     margin-top: -155px;
   }
+}
+
+/* #puzzle-container {
+  position: relative;
+  height: 0;
+} */
+#cibles {
+  margin-bottom: 60px;
+}
+#partenaires-texte {
+  letter-spacing: -0.1px;
 }

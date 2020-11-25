@@ -4,19 +4,17 @@
 
 <div class="col-12">
 
-  <h1>
-    <?php the_title(); ?>
-  </h1>
-
   <!-- Desription -->
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-sm-12 col-md-6 col-lg-6">
         <?php
         $description = get_field('description');
         $desription_image = $description['description_image'];
         ?>
-
+        <h2>
+          <?php the_title(); ?>
+        </h2>
         <p>
           <?= $description['description_texte'] ?>
         </p>
@@ -33,31 +31,32 @@
         $mission = get_field('mission');
         ?>
 
-        <h2>
+        <h3>
           <?= $mission['mission_titre'] ?>
-        </h2>
+        </h3>
         <p>
           <?= $mission['mission_texte'] ?>
         </p>
-
-        <?php if ($mission['mission_link_1']) : ?>
-        <a href="<?= $mission['mission_link_1'] ?>" class="btn btn-light" target="blanket">
-          <?= $mission['mission_link_1_texte'] ?>
-        </a>
-        <?php endif; ?>
-        <?php if ($mission['mission_link_2']) : ?>
-        <a href="<?= $mission['mission_link_2'] ?>" class="btn btn-light" target="blanket">
-          <?= $mission['mission_link_2_texte'] ?>
-        </a>
-        <?php endif; ?>
-
       </div>
+
       <div class="col-sm-12 col-md-6 col-lg-6">
       </div>
     </div>
+    <div>
+      <?php if ($mission['mission_link_1']) : ?>
+      <a href="<?= $mission['mission_link_1'] ?>" class="btn btn-light pdf" target="blanket">
+        <?= $mission['mission_link_1_texte'] ?>
+      </a>
+      <?php endif; ?>
+      <?php if ($mission['mission_link_2']) : ?>
+      <a href="<?= $mission['mission_link_2'] ?>" class="btn btn-light pdf" target="blanket">
+        <?= $mission['mission_link_2_texte'] ?>
+      </a>
+      <?php endif; ?>
+    </div>
 
     <!-- Nos publics cibles -->
-    <div class="row">
+    <div class="row" id="cibles">
       <div class="col-sm-12 col-md-6 col-lg-6">
         <?php
         $publics = get_field('publics');
@@ -67,9 +66,9 @@
         <img src="<?= $publics_image['url'] ?>" alt="<?= $publics_image['caption'] ?>" class="rounded img-fluid">
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
-        <h2>
+        <h3>
           <?= $publics['publics_titre'] ?>
-        </h2>
+        </h3>
         <p>
           <?= $publics['publics_texte'] ?>
         </p>
@@ -83,8 +82,13 @@
     </div>
 
     <!-- Une antenne à proximité -->
-    <div class="row">
-      <?php get_template_part('parts/antennes'); ?>
+    <div class="wave-large wave">
+
+    </div>
+    <div class="onwave-group">
+      <div class="row">
+        <?php get_template_part('parts/antennes'); ?>
+      </div>
     </div>
 
     <!-- Confidentialité et gratuité -->
@@ -96,9 +100,9 @@
         $confident = get_field('confident');
         ?>
 
-        <h2>
+        <h3>
           <?= $confident['confident_titre'] ?>
-        </h2>
+        </h3>
         <p>
           <?= $confident['confident_texte'] ?>
         </p>
@@ -106,17 +110,17 @@
     </div>
 
     <!-- Nos partenaires -->
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-sm-12 col-md-6 col-lg-6">
         <?php
         $partenaires = get_field('partenaires');
         $partenaires_image = $partenaires['partenaires_image'];
         ?>
 
-        <h2>
+        <h3>
           <?= $partenaires['partenaires_titre'] ?>
-        </h2>
-        <p>
+        </h3>
+        <p id="partenaires-texte">
           <?= $partenaires['partenaires_texte'] ?>
         </p>
 

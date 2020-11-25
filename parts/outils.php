@@ -8,7 +8,7 @@ $outil_5 = get_field('outil_5');
 $outil_6 = get_field('outil_6');
 ?>
 
-<div class="swiper-container row wave">
+<div class="swiper-container row">
   <div class="swiper-wrapper">
 
     <!-- Outils 1 -->

@@ -5,11 +5,11 @@ $antennes = get_field('antennes');
 
 <?php if (get_field('antennes_titre')) : ?>
 <div class="row">
-  <h2>
+  <h2 class="onwave-text">
     <?= get_field('antennes_titre'); ?>
   </h2>
   <?php if (get_field('antennes_texte')) : ?>
-  <p>
+  <p class="onwave-text">
     <?= get_field('antennes_texte'); ?>
   </p>
   <?php endif; ?>

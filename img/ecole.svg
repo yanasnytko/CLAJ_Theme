@@ -1,3 +1,11 @@
-<svg width="430" height="494" viewBox="0 0 430 494" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M151.593 0.434761C220.792 -4.3338 295.178 92.0745 341.65 149.097C378.031 193.738 426.172 230.988 429.175 289.725C432.557 355.893 406.645 421.658 357.538 459.914C307.111 499.198 241.676 499.374 180.105 483.757C110.662 466.142 29.9943 442.613 4.55755 370.38C-20.5478 299.087 92.6453 239.515 119.5 171.5C172.576 37.0753 91.8575 9.53137 151.593 0.434761Z" fill="#4B9021"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 430 494" style="enable-background:new 0 0 430 494;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#E0E0E0;}
+</style>
+<path class="st0" d="M151.6,0.4c69.2-4.8,143.6,91.6,190.1,148.7c36.4,44.6,84.5,81.9,87.5,140.6c3.4,66.2-22.5,131.9-71.6,170.2
+	c-50.4,39.3-115.9,39.5-177.4,23.8C110.7,466.1,30,442.6,4.6,370.4c-25.1-71.3,88.1-130.9,114.9-198.9
+	C172.6,37.1,91.9,9.5,151.6,0.4z"/>
 </svg>

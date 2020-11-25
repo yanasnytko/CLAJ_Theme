@@ -58,7 +58,10 @@
   </div>
 
   <!-- Les antennes -->
-  <div>
+  <div class="wave-large wave">
+
+  </div>
+  <div class="onwave-group">
     <?php get_template_part('parts/antennes'); ?>
   </div>
 
@@ -88,23 +91,28 @@
   </div>
 
   <!-- Nos actualités -->
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-6">
-      <?php
-      $actus = get_field('actus');
-      $actus_image = $actus['image'];
-      ?>
-      <h2>
-        <?= $actus['titre'] ?>
-      </h2>
-      <?php if ($actus['link']) : ?>
-      <a href="<?= $actus['link'] ?>" class="btn btn-light">
-        <?= $actus['link_texte'] ?>
-      </a>
-      <?php endif; ?>
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6">
-      <img src="<?= $actus_image['url'] ?>" alt="<?= $actus_image['caption'] ?>" class="rounded img-fluid">
+  <div class="wave wave-small">
+
+  </div>
+  <div class="onwave-group">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <?php
+        $actus = get_field('actus');
+        $actus_image = $actus['image'];
+        ?>
+        <h2 class="onwave-text">
+          <?= $actus['titre'] ?>
+        </h2>
+        <?php if ($actus['link']) : ?>
+        <a href="<?= $actus['link'] ?>" class="btn btn-light">
+          <?= $actus['link_texte'] ?>
+        </a>
+        <?php endif; ?>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+        <img src="<?= $actus_image['url'] ?>" alt="<?= $actus_image['caption'] ?>" class="rounded img-fluid">
+      </div>
     </div>
   </div>
 
@@ -153,7 +161,7 @@
         <?= $urgence['link_texte'] ?>
       </a>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-6">
+    <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
       <img src="<?= $urgence_image['url'] ?>" alt="<?= $urgence_image['caption'] ?>" class="rounded img-fluid">
     </div>
   </div>

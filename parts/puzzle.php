@@ -8,7 +8,7 @@
   $puzzle_4 = get_field('puzzle_4');
   ?>
 
-  <a href="<?= $puzzle_1['link']['url'] ?>">
+  <a href="<?= $puzzle_1['link']['url'] ?>" class="puzzle-container">
     <div id="jeune">
       <h3>
         <?= $puzzle_1['titre'] ?>
@@ -19,7 +19,7 @@
     </div>
   </a>
 
-  <a href="<?= $puzzle_2['link']['url'] ?>">
+  <a href="<?= $puzzle_2['link']['url'] ?>" class="puzzle-container">
     <div id="famille">
       <h3>
         <?= $puzzle_2['titre'] ?>
@@ -30,7 +30,7 @@
     </div>
   </a>
 
-  <a href="<?= $puzzle_3['link']['url'] ?>">
+  <a href="<?= $puzzle_3['link']['url'] ?>" class="puzzle-container">
     <div id="milieu">
       <h3>
         <?= $puzzle_3['titre'] ?>
@@ -41,7 +41,7 @@
     </div>
   </a>
 
-  <a href="<?= $puzzle_4['link'] ?>">
+  <a href="<?= $puzzle_4['link'] ?>" class="puzzle-container">
     <div id="ecole">
       <h3>
         <?= $puzzle_4['titre'] ?>
@@ -51,6 +51,7 @@
       </p>
     </div>
   </a>
-  <img src="<?php echo $puzzle_image['url'] ?>" alt="<?= $puzzle_image['caption'] ?>" class="rounded img-fluid"
-    id="puzzle-illu">
+  <div id="puzzle-illu">
+    <img src="<?php echo $puzzle_image['url'] ?>" alt="<?= $puzzle_image['caption'] ?>" class="rounded img-fluid">
+  </div>
 </div>
